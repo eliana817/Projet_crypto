@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import os
 
 bp = Blueprint('routes', __name__)
-
+bp.secret_key = 'secretkey'
 ####################### Paths ###################
 
 @bp.route('/')
