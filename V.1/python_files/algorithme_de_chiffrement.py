@@ -10,7 +10,6 @@ from python_files.database import connect_db
 ############# Functions ################
 class Cryptography:
 
-    #### For broken version
     @staticmethod
     def generate_aes_key():
         """Generate a random AES key."""
@@ -42,7 +41,6 @@ class Cryptography:
         """Remove padding from data."""
         return data[:-data[-1]]
 
-    #### For secure version
     # Générer une paire de clés RSA
     @staticmethod
     def generate_rsa_keys():
