@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Résultats</title>
+    <link rel="stylesheet" href="../static/resultats.css"> <!-- Lien vers le fichier CSS -->
 </head>
 <body>
-    <h1>Résultats des votes</h1>
+    <!-- Bandeau supérieur -->
+    <header>
+        <h1>Résultats des votes</h1>
+        <div class="header-buttons">
+            <a href="/logout" class="btn">Se déconnecter</a>
+            <a href="/vote" class="btn">Retour au vote</a>
+        </div>
+    </header>
 
-    <!-- Affichage des résultats des votes -->
-    <div>
-        <p><strong>Brioche:</strong> {{ vote_count['Brioche'] }}</p>
-        <p><strong>Ticket à Gratter:</strong> {{ vote_count['Ticket à Gratter'] }}</p>
-    </div>
+    <!-- Contenu principal -->
+    <main>
+        <div class="results-container">
+            <h2>Résultats des votes</h2>
 
-    <!-- Bouton de déconnexion -->
-    <form action="{{ url_for('routes.logout') }}" method="post">
-        <button type="submit">Se déconnecter</button>
-    </form>
+            <!-- Affichage des résultats des votes -->
+            <div class="results">
+                <div class="result-item">
+                    <h3>Brioche</h3>
+                    <p>{{ vote_count['Brioche'] }} votes</p>
+                </div>
+                <div class="result-item">
+                    <h3>Ticket à Gratter</h3>
+                    <p>{{ vote_count['Ticket à Gratter'] }} votes</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Plateforme de vote - Tous droits réservés</p>
+    </footer>
 </body>
 </html>

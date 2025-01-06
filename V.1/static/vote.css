@@ -1,0 +1,168 @@
+/* Style global pour la page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f4e2; /* Beige clair pour un fond doux et appétissant */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Pseudo-élément pour l'image de fond floutée */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('background.jpg'); /* Remplacez par votre image de fond */
+    background-size: cover;
+    background-position: center center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Bandeau du haut */
+header {
+    background-color: rgba(221, 137, 3, 0.8); /* Jaune doré */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+    flex: 1;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons .btn {
+    background-color: #6f4f1e; /* Chocolat */
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.header-buttons .btn:hover {
+    background-color: #3e2b1f; /* Chocolat plus foncé */
+}
+
+/* Contenu principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Conteneur de vote */
+.vote-container {
+    background-color: #fff3e3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.vote-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #6f4f1e;
+}
+
+/* Formulaire de vote */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6f4f1e; /* Bordure chocolat */
+    border-radius: 5px;
+}
+
+select {
+    background-color: #fff;
+}
+
+button {
+    background-color: #6f4f1e; /* Chocolat */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e2b1f; /* Chocolat plus foncé */
+}
+
+/* Message après vote */
+.vote-message {
+    font-size: 18px;
+    color: #6f4f1e;
+    margin-top: 20px;
+}
+
+.vote-message button {
+    background-color: #6f4f1e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.vote-message button:hover {
+    background-color: #3e2b1f; /* Chocolat plus foncé */
+}
+
+/* Liste des messages flash */
+ul.messages {
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+ul.messages li {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #6f4f1e;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}

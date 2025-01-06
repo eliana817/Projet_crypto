@@ -1,0 +1,130 @@
+/* Style global pour la page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f4e2; /* Beige clair */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Pseudo-élément pour l'image de fond floutée */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('background.jpg'); /* Remplacez par votre image de fond */
+    background-size: cover;
+    background-position: center center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Bandeau du haut */
+header {
+    background-color: rgba(221, 137, 3, 0.8); /* Jaune doré */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+    flex: 1;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons .btn {
+    background-color: #6f4f1e; /* Chocolat */
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.header-buttons .btn:hover {
+    background-color: #3e2b1f; /* Chocolat plus foncé */
+}
+
+/* Contenu principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Conteneur des résultats */
+.results-container {
+    background-color: #fff3e3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.results-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #6f4f1e;
+}
+
+/* Affichage des résultats */
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.result-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #6f4f1e;
+}
+
+.result-item h3 {
+    font-size: 22px;
+    color: #6f4f1e;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #6f4f1e;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
