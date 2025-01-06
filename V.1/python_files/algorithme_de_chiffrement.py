@@ -10,37 +10,6 @@ from python_files.database import connect_db
 ############# Functions ################
 class Cryptography:
 
-    @staticmethod
-    def generate_aes_key():
-        """Generate a random AES key."""
-        return get_random_bytes(32)  # AES-256
-    
-    @staticmethod
-    def encrypt_with_aes(key, plaintext):
-        """Encrypt data using AES (AES-CBC mode)."""
-        cipher = AES.new(key, AES.MODE_CBC)
-        iv = cipher.iv
-        ciphertext = cipher.encrypt(Cryptography.pad(plaintext))
-        return iv, ciphertext
-    
-    @staticmethod
-    def decrypt_with_aes(key, iv, ciphertext):
-        """Decrypt data using AES (AES-CBC mode)."""
-        cipher = AES.new(key, AES.MODE_CBC, iv)
-        plaintext = cipher.decrypt(ciphertext)
-        return Cryptography.unpad(plaintext)
-
-    @staticmethod
-    def pad(data):
-        """Pad data to be a multiple of 16 bytes."""
-        padding_length = 16 - (len(data) % 16)
-        return data + bytes([padding_length] * padding_length)
-
-    @staticmethod
-    def unpad(data):
-        """Remove padding from data."""
-        return data[:-data[-1]]
-
     # Générer une paire de clés RSA
     @staticmethod
     def generate_rsa_keys():
