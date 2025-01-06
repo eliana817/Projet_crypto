@@ -6,7 +6,7 @@ import os
 
 bp = Blueprint('routes', __name__)
 
-####################### Paths #####################
+####################### Paths ###################
 
 @bp.route('/')
 
@@ -109,28 +109,26 @@ def results():
         elif vote == "Ticket à Gratter":
             vote_count["Ticket à Gratter"] += 1
     
-    return render_template('resultats.html', vote_count=vote_count)
+    return render_template('results.html', vote_count=vote_count)
 
 
 
 @bp.route('/vote', methods=['GET', 'POST'])
 def vote():
     if 'user_id' not in session:
-        flash('Vous devez être connecté pour voter!', 'error')
-        return redirect('/login')  # Redirige vers la page de login si l'utilisateur n'est pas connecté
+        flash('Vous devez être connecté pour voter !', 'error')
+        return redirect('/login')
     
     user_id = session['user_id']
 
     # Vérifier si l'utilisateur a déjà voté
     if algorithme_de_chiffrement.Cryptography.has_user_voted(user_id):
-        # Afficher un message flash et empêcher de voter
-        flash('Vous avez déjà voté !', 'info')
-        return render_template('vote.html', has_voted=True)  # Affiche le bouton des résultats si déjà voté
+        #flash('Vous avez déjà voté !', 'info')
+        return render_template('vote.html', has_voted=True)
 
     if request.method == 'POST':
         vote = request.form['vote']
-
-        # Récupérer la clé publique RSA de l'utilisateur
+        
         conn = connect_db()
         cursor = conn.cursor()
         cursor.execute("SELECT rsa_public_key FROM users WHERE id = ?", (user_id,))
@@ -139,18 +137,17 @@ def vote():
 
         public_key = user[0]
 
-        # Chiffrer le vote avec AES et la clé publique RSA
-        encrypted_vote, encrypted_aes_key = algorithme_de_chiffrement.Cryptography.encrypt_vote(vote, public_key)
+        encrypted_vote, encrypted_aes_key, hmac_digest, hmac_key = algorithme_de_chiffrement.Cryptography.encrypt_vote(vote, public_key)
 
         # Stocker le vote chiffré et la clé publique dans la base de données
         conn = connect_db()
         cursor = conn.cursor()
-        cursor.execute("INSERT INTO votes (vote, aes_key, user_public_key) VALUES (?, ?, ?)", 
-                       (encrypted_vote, encrypted_aes_key, public_key))
+        cursor.execute("INSERT INTO votes (vote, aes_key, user_public_key, hmac_digest, hmac_key) VALUES (?, ?, ?, ?, ?)", 
+                       (encrypted_vote, encrypted_aes_key, public_key, hmac_digest, hmac_key))
         conn.commit()
         conn.close()
 
-        # Marquer l'utilisateur comme ayant voté (mettre has_voted à 1)
+        # Marquer l'utilisateur comme ayant voté
         conn = connect_db()
         cursor = conn.cursor()
         cursor.execute("UPDATE users SET has_voted = 1 WHERE id = ?", (user_id,))
@@ -158,6 +155,6 @@ def vote():
         conn.close()
 
         flash(f'Vous avez voté pour: {vote}', 'success')
-        return redirect('/vote')  # Retour à la page de vote après avoir soumis le vote
+        return redirect('/vote')
 
-    return render_template('vote.html', has_voted=False)  # Si l'utilisateur n'a pas voté, il peut encore voter
+    return render_template('vote.html', has_voted=False)
