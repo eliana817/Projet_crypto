@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats</title>
+</head>
+<body>
+    <h1>Résultats des votes</h1>
+
+    <!-- Affichage des résultats des votes -->
+    <div>
+        <p><strong>Brioche:</strong> {{ vote_count['Brioche'] }}</p>
+        <p><strong>Ticket à Gratter:</strong> {{ vote_count['Ticket à Gratter'] }}</p>
+    </div>
+
+    <!-- Bouton de déconnexion -->
+    <form action="{{ url_for('logout') }}" method="post">
+        <button type="submit">Se déconnecter</button>
+    </form>
+
+</body>
+</html>

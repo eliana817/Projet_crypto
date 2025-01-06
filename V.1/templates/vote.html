@@ -1,0 +1,40 @@
+<!-- vote.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Vote</title>
+</head>
+<body>
+    <h1>Bienvenue sur la page de vote</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    {% if not has_voted %}
+        <form method="POST">
+            <label for="vote">Choisissez une option :</label>
+            <select name="vote" id="vote" required>
+                <option value="Brioche">Brioche</option>
+                <option value="Ticket à Gratter">Ticket à Gratter</option>
+            </select>
+            <button type="submit">Voter</button>
+        </form>
+    {% else %}
+        <h3>Merci d'avoir voté !</h3>
+        <p>Vous avez voté. Vous pouvez maintenant voir les résultats.</p>
+        <a href="{{ url_for('resultats') }}">
+            <button>Voir les résultats</button>
+        </a>
+    {% endif %}
+</body>
+</html>

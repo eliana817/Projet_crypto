@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Voting System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Secure Voting System</h1>
+        <div class="header-buttons">
+            <button onclick="window.location.href='{{ url_for('routes.register') }}'">Register</button>
+            <button onclick="window.location.href='{{ url_for('routes.login') }}'">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="table-container">
+            <h3>Table 1</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Empty rows for now -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <h3>Table 2</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column A</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Empty rows for now -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
