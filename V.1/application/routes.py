@@ -18,17 +18,21 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        
+
         conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
         user = cursor.fetchone()
         conn.close()
         
-        if user and check_password_hash(user[2], password):
-            session['user_id'] = user[0]
-            flash('Connexion réussie!', 'success')
-            return redirect('/vote')  # Redirige vers la page de vote
+        if user:
+            # Hash le 'username + password' et compare avec le hash stocké
+            if check_password_hash(user[2], username + password):  # user[2] -> hash du mot de passe
+                session['user_id'] = user[0]  # Enregistrement de l'ID de l'utilisateur dans la session
+                flash('Connexion réussie !', 'success')
+                return redirect('/vote')  # Redirige vers la page de vote
+            else:
+                flash('Pseudo ou mot de passe incorrect.', 'error')
         else:
             flash('Pseudo ou mot de passe incorrect.', 'error')
     

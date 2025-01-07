@@ -1,3 +1,4 @@
 python_files/__pycache__
 app/__pycache__
 private_keys
+users.db
