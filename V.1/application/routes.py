@@ -1,8 +1,8 @@
 from flask import Blueprint, render_template, request, redirect, flash, session
 from python_files import database
 from python_files import algorithme_de_chiffrement
-from werkzeug.security import generate_password_hash, check_password_hash
 import os
+import hashlib
 
 bp = Blueprint('routes', __name__)
 
@@ -13,26 +13,32 @@ bp = Blueprint('routes', __name__)
 def homepage():
 	return render_template('homepage.html')
 
+
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        
-        conn = database.connect_db()
-        cursor = conn.cursor()
-        cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
-        user = cursor.fetchone()
-        conn.close()
-        
-        if user and check_password_hash(user[2], password):
-            session['user_id'] = user[0]
-            flash('Connexion réussie!', 'success')
-            return redirect('/vote')  # Redirige vers la page de vote
-        else:
-            flash('Pseudo ou mot de passe incorrect.', 'error')
-    
-    return render_template('login.html')
+	if request.method == 'POST':
+		username = request.form['username']
+		password = request.form['password']
+		password_usename = password + username
+		
+		conn = database.connect_db()
+		cursor = conn.cursor()
+		cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
+		user = cursor.fetchone()
+		conn.close()
+		
+		if user:
+			# Hash le 'username + password' et compare avec le hash stocké
+			if user[2]==  hashlib.sha1(password_usename.encode()).hexdigest():  # user[2] -> hash du mot de passe
+				session['user_id'] = user[0]  # Enregistrement de l'ID de l'utilisateur dans la session
+				flash('Connexion réussie !', 'success')
+				return redirect('/vote')  # Redirige vers la page de vote
+			else:
+				flash('Pseudo ou mot de passe incorrect.', 'error')
+		else:
+			flash('Pseudo ou mot de passe incorrect.', 'error')
+	
+	return render_template('login.html')
 
 
 @bp.route('/logout', methods=['GET', 'POST'])
@@ -48,6 +54,7 @@ def register():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        password_username = password+username
         
         # Vérification si l'utilisateur existe déjà
         conn = database.connect_db()
@@ -58,8 +65,7 @@ def register():
         if existing_user:
             flash('Ce pseudo est déjà pris.', 'error')
             return redirect('/register')  # Redirige vers la page d'inscription si l'utilisateur existe déjà
-        
-        hashed_password = generate_password_hash(password)
+        hashed_password = hashlib.sha1(password_username.encode()).hexdigest()
 
         # Génération de la paire de clés RSA pour cet utilisateur
         public_key, private_key = algorithme_de_chiffrement.Cryptography.generate_rsa_keys()
