@@ -1,16 +1,21 @@
-from flask import Blueprint, render_template, request, redirect, flash, session
+from flask import Blueprint, render_template, request, redirect, flash, session, abort
 from python_files import database
 from python_files import algorithme_de_chiffrement
 from werkzeug.security import generate_password_hash, check_password_hash
 import os
-from flask import abort, current_app
+import logging
 
 bp = Blueprint('routes', __name__)
 
 ####################### Paths ###################
 
-@bp.route('/')
+@bp.before_request
+def log_user_activity():
+    user_ip = request.remote_addr
+    user_agent = request.user_agent.string
+    logging.info(f"User accessed {request.path} from {user_ip} using {user_agent}")
 
+@bp.route('/')
 def homepage():
     return render_template('homepage.html')
 
@@ -19,7 +24,7 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        
+        #logging.info(f"User submitted data: {request.form}")
         # Vérifier si le nom d'utilisateur est valide
         if not algorithme_de_chiffrement.Cryptography.is_valid_username(username):
             flash("Le pseudo ne peut contenir que des lettres, des chiffres, des tirets et des underscores.", "error")
