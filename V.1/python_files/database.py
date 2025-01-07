@@ -3,7 +3,7 @@ from python_files import algorithme_de_chiffrement
 import os
 from app import app
 from flask import render_template
-from werkzeug.security import generate_password_hash
+import hashlib
 
 ######### Database ##########
 
@@ -32,9 +32,7 @@ def create_votes_table():
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         vote TEXT NOT NULL,
                         aes_key TEXT NOT NULL,
-                        user_public_key BLOB NOT NULL,
-                        hmac_digest TEXT NOT NULL,
-                        hmac_key BLOB NOT NULL)''')
+                        user_public_key BLOB NOT NULL)''')
     conn.commit()
     conn.close()
 
@@ -47,7 +45,9 @@ def create_admin_user():
     if count == 0:  # Si aucun utilisateur n'existe, créer un admin par défaut
         username = "admin"
         password = "admin"  # Mot de passe pour l'admin
-        hashed_password = generate_password_hash(username + password)  # Hash du username + mot de passe
+        password_usename = username + password
+        
+        hashed_password = hashlib.sha1(password_usename.encode()).hexdigest()
         public_key, private_key = algorithme_de_chiffrement.Cryptography.generate_rsa_keys()
         cursor.execute("INSERT INTO users (username, password, rsa_public_key, has_voted, is_admin) VALUES (?, ?, ?, ?, ?)", 
                        (username, hashed_password, public_key, 0, 1))  # is_admin = 1 pour admin

@@ -1,0 +1,21 @@
+2025-01-07 16:58:17,886 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-07 16:58:17,886 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-07 16:58:17,886 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 16:58:18,105 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 16:58:18,121 INFO werkzeug MainThread :  * Debugger PIN: 229-517-367
+2025-01-07 16:59:18,307 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\egrasser\\Documents\\Crypto\\Project\\V.2\\app.py', reloading
+2025-01-07 16:59:18,350 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 16:59:18,610 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 16:59:18,613 INFO werkzeug MainThread :  * Debugger PIN: 229-517-367
+2025-01-07 16:59:36,893 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\egrasser\\Documents\\Crypto\\Project\\V.2\\application\\__init__.py', reloading
+2025-01-07 16:59:36,921 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 16:59:37,160 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 16:59:37,163 INFO werkzeug MainThread :  * Debugger PIN: 229-517-367
+2025-01-07 17:00:09,768 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-07 17:00:09,768 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 17:00:09] "GET / HTTP/1.1" 200 -
+2025-01-07 17:00:10,073 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 17:00:10] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-07 17:00:10,387 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 17:00:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-07 17:00:10,700 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 17:00:10] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-07 17:07:01,672 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 17:07:01] "[33mGET /private_keys HTTP/1.1[0m" 404 -
+2025-01-07 17:07:36,189 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 17:07:36] "[33mGET /private_keys HTTP/1.1[0m" 404 -
