@@ -32,9 +32,7 @@ def create_votes_table():
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         vote TEXT NOT NULL,
                         aes_key TEXT NOT NULL,
-                        user_public_key BLOB NOT NULL,
-                        hmac_digest TEXT NOT NULL,
-                        hmac_key BLOB NOT NULL)''')
+                        user_public_key BLOB NOT NULL)''')
     conn.commit()
     conn.close()
 

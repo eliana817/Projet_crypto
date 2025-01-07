@@ -33,11 +33,7 @@ class Cryptography:
         encrypted_vote = base64.b64encode(iv + ciphertext).decode('utf-8')
         encrypted_aes_key = base64.b64encode(encrypted_aes_key).decode('utf-8')
 
-        hmac_key = get_random_bytes(32)
-        hmac = HMAC.new(hmac_key, encrypted_vote.encode() + base64.b64decode(encrypted_aes_key), SHA256)
-        hmac_digest = hmac.hexdigest()
-
-        return encrypted_vote, encrypted_aes_key, hmac_digest, hmac_key
+        return encrypted_vote, encrypted_aes_key
 
 
     # Vérification si l'utilisateur a déjà voté
@@ -52,13 +48,8 @@ class Cryptography:
 
     # Fonction de déchiffrement du vote
     @staticmethod
-    def decrypt_vote(encrypted_vote, encrypted_aes_key, hmac_digest, hmac_key, public_key):
-        hmac = HMAC.new(hmac_key, encrypted_vote.encode() + base64.b64decode(encrypted_aes_key), SHA256)
-        calculated_hmac = hmac.hexdigest()
-
-        if calculated_hmac != hmac_digest:
-            raise ValueError("L'HMAC ne correspond pas. Les données ont été modifiées.")
-
+    def decrypt_vote(encrypted_vote, encrypted_aes_key, public_key):
+        
         username = Cryptography.get_username_from_public_key(public_key)
         private_key_path = f"private_keys/{username}_private_key.pem"
         
