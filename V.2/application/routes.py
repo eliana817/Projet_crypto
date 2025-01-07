@@ -92,7 +92,7 @@ def register():
     return render_template('register.html')
 
 @bp.route('/results')
-def resultats():
+def results():
     # Vérifier si l'utilisateur est connecté, sinon renvoyer une erreur 403
     if 'user_id' not in session:
         abort(403)  # Retourne une erreur 403 si l'utilisateur n'est pas connecté
@@ -124,7 +124,7 @@ def resultats():
         elif vote == "Ticket à Gratter":
             vote_count["Ticket à Gratter"] += 1
     
-    return render_template('resultats.html', vote_count=vote_count)
+    return render_template('results.html', vote_count=vote_count)
 
 
 
