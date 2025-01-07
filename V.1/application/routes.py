@@ -16,6 +16,7 @@ def homepage():
 
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
+<<<<<<< HEAD
 	if request.method == 'POST':
 		username = request.form['username']
 		password = request.form['password']
@@ -39,6 +40,30 @@ def login():
 			flash('Pseudo ou mot de passe incorrect.', 'error')
 	
 	return render_template('login.html')
+=======
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        conn = database.connect_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
+        user = cursor.fetchone()
+        conn.close()
+        
+        if user:
+            # Hash le 'username + password' et compare avec le hash stocké
+            if check_password_hash(user[2], username + password):  # user[2] -> hash du mot de passe
+                session['user_id'] = user[0]  # Enregistrement de l'ID de l'utilisateur dans la session
+                flash('Connexion réussie !', 'success')
+                return redirect('/vote')  # Redirige vers la page de vote
+            else:
+                flash('Pseudo ou mot de passe incorrect.', 'error')
+        else:
+            flash('Pseudo ou mot de passe incorrect.', 'error')
+    
+    return render_template('login.html')
+>>>>>>> bf30de507258fe1650907266aa64ee08ada265d7
 
 
 @bp.route('/logout', methods=['GET', 'POST'])

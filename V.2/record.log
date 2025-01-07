@@ -1,0 +1,125 @@
+2025-01-07 14:25:00,764 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+2025-01-07 14:25:00,764 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-07 14:25:00,764 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 14:25:01,003 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 14:25:01,003 INFO werkzeug MainThread :  * Debugger PIN: 229-517-367
+2025-01-07 14:25:17,557 INFO application Thread-2 (process_request_thread) : Info level log
+2025-01-07 14:25:17,557 WARNING application Thread-2 (process_request_thread) : Warning level log
+2025-01-07 14:25:17,557 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:17] "GET / HTTP/1.1" 200 -
+2025-01-07 14:25:17,843 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:17] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-07 14:25:17,894 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:17] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-07 14:25:18,157 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-07 14:25:36,040 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:36] "GET /login HTTP/1.1" 200 -
+2025-01-07 14:25:36,361 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:36] "GET /static/login.css HTTP/1.1" 200 -
+2025-01-07 14:25:36,628 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:36] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-07 14:25:53,380 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:53] "POST /login HTTP/1.1" 200 -
+2025-01-07 14:25:53,711 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:53] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-07 14:25:53,965 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:53] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-07 14:25:55,932 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:55] "GET /register HTTP/1.1" 200 -
+2025-01-07 14:25:56,244 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:56] "GET /static/register.css HTTP/1.1" 200 -
+2025-01-07 14:25:56,527 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:56] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-07 14:25:59,693 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:25:59] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-07 14:26:00,001 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:00] "GET /login HTTP/1.1" 200 -
+2025-01-07 14:26:00,262 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:00] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-07 14:26:03,262 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-07 14:26:03,577 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:03] "GET /vote HTTP/1.1" 200 -
+2025-01-07 14:26:03,846 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:03] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-07 14:26:03,911 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:03] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-07 14:26:06,815 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:06] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-01-07 14:26:07,128 INFO application Thread-23 (process_request_thread) : Info level log
+2025-01-07 14:26:07,128 WARNING application Thread-23 (process_request_thread) : Warning level log
+2025-01-07 14:26:07,128 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:07] "GET / HTTP/1.1" 200 -
+2025-01-07 14:26:07,393 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-07 14:26:07,460 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:26:07] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-07 14:27:43,744 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\egrasser\\Documents\\Crypto\\Project\\V.2\\application\\routes.py', reloading
+2025-01-07 14:27:43,759 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 14:27:44,015 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 14:27:44,018 INFO werkzeug MainThread :  * Debugger PIN: 229-517-367
+2025-01-07 14:29:30,912 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:29:30] "GET /register HTTP/1.1" 200 -
+2025-01-07 14:29:31,194 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:29:31] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+2025-01-07 14:29:31,246 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:29:31] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-07 14:29:33,330 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:29:33] "GET /login HTTP/1.1" 200 -
+2025-01-07 14:29:33,661 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:29:33] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-07 14:29:39,078 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:29:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-07 14:29:39,398 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:29:39] "GET /vote HTTP/1.1" 200 -
+2025-01-07 14:29:39,661 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:29:39] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-07 14:29:39,725 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 14:29:39] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-07 14:45:16,309 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\egrasser\\Documents\\Crypto\\Project\\V.2\\application\\routes.py', reloading
+2025-01-07 14:45:16,341 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 14:45:16,575 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 14:45:16,575 INFO werkzeug MainThread :  * Debugger PIN: 229-517-367
+2025-01-07 14:46:28,524 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\egrasser\\Documents\\Crypto\\Project\\V.2\\application\\__init__.py', reloading
+2025-01-07 14:46:28,550 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 14:46:28,784 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 14:46:28,787 INFO werkzeug MainThread :  * Debugger PIN: 229-517-367
+2025-01-07 14:51:17,974 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\egrasser\\Documents\\Crypto\\Project\\V.2\\application\\routes.py', reloading
+2025-01-07 14:51:18,005 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 14:51:18,239 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 14:51:18,239 INFO werkzeug MainThread :  * Debugger PIN: 229-517-367
+2025-01-07 14:56:47,556 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\egrasser\\Documents\\Crypto\\Project\\V.2\\application\\__init__.py', reloading
+2025-01-07 14:56:47,572 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 14:56:47,806 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 14:56:47,822 INFO werkzeug MainThread :  * Debugger PIN: 229-517-367
+2025-01-07 15:06:46,367 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+2025-01-07 15:06:46,367 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-07 15:06:46,368 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 15:06:46,614 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 15:06:46,617 INFO werkzeug MainThread :  * Debugger PIN: 134-312-977
+2025-01-07 15:06:59,833 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+2025-01-07 15:06:59,833 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-07 15:06:59,834 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 15:07:00,068 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 15:07:00,071 INFO werkzeug MainThread :  * Debugger PIN: 134-312-977
+2025-01-07 15:07:36,992 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:07:36] "GET / HTTP/1.1" 200 -
+2025-01-07 15:07:37,062 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:07:37] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-07 15:07:37,066 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:07:37] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-07 15:07:37,069 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:07:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-07 15:07:38,926 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:07:38] "GET /login HTTP/1.1" 200 -
+2025-01-07 15:07:38,949 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:07:38] "GET /static/login.css HTTP/1.1" 200 -
+2025-01-07 15:07:38,955 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:07:38] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-07 15:08:25,236 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\dskrabo\\Documents\\Crypto\\V.2\\app.py', reloading
+2025-01-07 15:08:25,265 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 15:08:25,517 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 15:08:25,520 INFO werkzeug MainThread :  * Debugger PIN: 134-312-977
+2025-01-07 15:11:55,953 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\dskrabo\\Documents\\Crypto\\V.2\\application\\routes.py', reloading
+2025-01-07 15:11:55,990 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 15:11:56,250 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 15:11:56,253 INFO werkzeug MainThread :  * Debugger PIN: 134-312-977
+2025-01-07 15:12:09,712 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\dskrabo\\Documents\\Crypto\\V.2\\application\\routes.py', reloading
+2025-01-07 15:12:09,749 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 15:12:09,996 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 15:12:09,999 INFO werkzeug MainThread :  * Debugger PIN: 134-312-977
+2025-01-07 15:12:55,354 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-07 15:12:55,354 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-07 15:12:55,355 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 15:12:55,590 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 15:12:55,593 INFO werkzeug MainThread :  * Debugger PIN: 134-312-977
+2025-01-07 15:13:14,239 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\dskrabo\\Documents\\Crypto\\V.2\\app.py', reloading
+2025-01-07 15:13:14,268 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 15:13:22,385 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-07 15:13:22,385 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-07 15:13:33,143 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5000
+2025-01-07 15:13:33,144 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-07 15:14:25,372 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:14:25] "GET / HTTP/1.1" 200 -
+2025-01-07 15:14:25,422 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:14:25] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-07 15:14:25,428 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:14:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-07 15:14:25,430 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:14:25] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-07 15:15:16,271 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:15:16] "GET / HTTP/1.1" 200 -
+2025-01-07 15:15:16,284 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:15:16] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-07 15:15:16,292 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:15:16] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-07 15:15:19,972 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-07 15:15:19,972 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-07 15:15:19,973 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-07 15:15:20,205 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-07 15:15:20,209 INFO werkzeug MainThread :  * Debugger PIN: 134-312-977
+2025-01-07 15:15:24,568 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:15:24] "GET / HTTP/1.1" 200 -
+2025-01-07 15:15:24,615 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:15:24] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-07 15:15:24,621 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:15:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-07 15:15:24,623 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 15:15:24] "GET /static/background.jpg HTTP/1.1" 200 -

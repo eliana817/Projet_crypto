@@ -3,7 +3,7 @@ from python_files import database
 from python_files import algorithme_de_chiffrement
 from werkzeug.security import generate_password_hash, check_password_hash
 import os
-from flask import abort
+from flask import abort, current_app
 
 bp = Blueprint('routes', __name__)
 
@@ -12,7 +12,7 @@ bp = Blueprint('routes', __name__)
 @bp.route('/')
 
 def homepage():
-	return render_template('homepage.html')
+    return render_template('homepage.html')
 
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
@@ -117,12 +117,12 @@ def results():
         decrypted_votes.append(decrypted_vote)
 
     # Compter les votes pour chaque option
-    vote_count = {"Brioche": 0, "Ticket à Gratter": 0}
+    vote_count = {"Pain au Chocolat": 0, "Chocolatine": 0}
     for vote in decrypted_votes:
-        if vote == "Brioche":
-            vote_count["Brioche"] += 1
-        elif vote == "Ticket à Gratter":
-            vote_count["Ticket à Gratter"] += 1
+        if vote == "Pain au Chocolat":
+            vote_count["Pain au Chocolat"] += 1
+        elif vote == "Chocolatine":
+            vote_count["Chocolatine"] += 1
     
     return render_template('results.html', vote_count=vote_count)
 
