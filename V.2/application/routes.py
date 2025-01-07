@@ -3,7 +3,7 @@ from python_files import database
 from python_files import algorithme_de_chiffrement
 from werkzeug.security import generate_password_hash, check_password_hash
 import os
-from flask import abort
+from flask import abort, current_app
 
 bp = Blueprint('routes', __name__)
 
@@ -12,7 +12,9 @@ bp = Blueprint('routes', __name__)
 @bp.route('/')
 
 def homepage():
-	return render_template('homepage.html')
+    current_app.logger.info("User requested home page")
+	
+    return render_template('homepage.html')
 
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
