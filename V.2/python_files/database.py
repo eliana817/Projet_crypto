@@ -1,7 +1,6 @@
 import sqlite3
 from python_files import algorithme_de_chiffrement
 import os
-from app import app
 from flask import render_template
 from werkzeug.security import generate_password_hash
 
@@ -59,6 +58,3 @@ def create_admin_user():
         with open(private_key_path, "wb") as f:
             f.write(private_key)
 
-@app.errorhandler(403)
-def forbidden_error(error):
-    return render_template('403.html'), 403

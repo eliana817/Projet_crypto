@@ -3,6 +3,7 @@ from python_files import database
 from python_files import algorithme_de_chiffrement
 import os
 import hashlib
+from app import app
 
 bp = Blueprint('routes', __name__)
 
@@ -157,3 +158,8 @@ def vote():
 		return redirect('/vote')
 
 	return render_template('vote.html', has_voted=False)
+
+
+@app.errorhandler(403)
+def forbidden_error(error):
+    return render_template('403.html'), 403
