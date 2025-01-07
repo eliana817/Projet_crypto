@@ -5,7 +5,7 @@ from Crypto.Hash import HMAC, SHA256
 from Crypto.Random import get_random_bytes
 from Crypto.Util.Padding import pad, unpad
 import base64
-from python_files.database import connect_db
+from python_files import database
 
 ############# Functions ################
 class Cryptography:
@@ -43,7 +43,7 @@ class Cryptography:
     # Vérification si l'utilisateur a déjà voté
     @staticmethod
     def has_user_voted(user_id):
-        conn = connect_db()
+        conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("SELECT has_voted FROM users WHERE id = ?", (user_id,))
         result = cursor.fetchone()
@@ -84,7 +84,7 @@ class Cryptography:
     # Fonction pour récupérer le nom d'utilisateur à partir de la clé publique
     @staticmethod
     def get_username_from_public_key(public_key):
-        conn = connect_db()
+        conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("SELECT username FROM users WHERE rsa_public_key = ?", (public_key,))
         result = cursor.fetchone()

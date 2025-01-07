@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, flash, session
-from python_files.database import connect_db
+from python_files import database
 from python_files import algorithme_de_chiffrement
 from werkzeug.security import generate_password_hash, check_password_hash
 import os
@@ -19,7 +19,7 @@ def login():
         username = request.form['username']
         password = request.form['password']
         
-        conn = connect_db()
+        conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
         user = cursor.fetchone()
@@ -50,7 +50,7 @@ def register():
         password = request.form['password']
         
         # Vérification si l'utilisateur existe déjà
-        conn = connect_db()
+        conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
         existing_user = cursor.fetchone()
@@ -88,7 +88,7 @@ def results():
         return redirect('/login')  # Redirige vers la page de login si l'utilisateur n'est pas connecté
 
     # Récupérer tous les votes de la base de données
-    conn = connect_db()
+    conn = database.connect_db()
     cursor = conn.cursor()
     cursor.execute("SELECT vote, aes_key, user_public_key, hmac_digest, hmac_key FROM votes")
     votes = cursor.fetchall()
@@ -129,7 +129,7 @@ def vote():
     if request.method == 'POST':
         vote = request.form['vote']
         
-        conn = connect_db()
+        conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("SELECT rsa_public_key FROM users WHERE id = ?", (user_id,))
         user = cursor.fetchone()
@@ -140,7 +140,7 @@ def vote():
         encrypted_vote, encrypted_aes_key, hmac_digest, hmac_key = algorithme_de_chiffrement.Cryptography.encrypt_vote(vote, public_key)
 
         # Stocker le vote chiffré et la clé publique dans la base de données
-        conn = connect_db()
+        conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("INSERT INTO votes (vote, aes_key, user_public_key, hmac_digest, hmac_key) VALUES (?, ?, ?, ?, ?)", 
                        (encrypted_vote, encrypted_aes_key, public_key, hmac_digest, hmac_key))
@@ -148,7 +148,7 @@ def vote():
         conn.close()
 
         # Marquer l'utilisateur comme ayant voté
-        conn = connect_db()
+        conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("UPDATE users SET has_voted = 1 WHERE id = ?", (user_id,))
         conn.commit()
