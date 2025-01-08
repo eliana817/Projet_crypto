@@ -42,6 +42,8 @@ def set_admin_password():
     if request.method == 'POST':
         password = request.form['password']
         confirm_password = request.form['confirm_password']
+        password = html.escape(password)
+        confirm_password = html.escape(confirm_password)
 
         # Vérifier que les mots de passe correspondent
         if password != confirm_password:
