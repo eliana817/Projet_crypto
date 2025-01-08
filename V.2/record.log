@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-01-08 14:10:18,645 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on https://127.0.0.1:5002
 2025-01-08 14:10:18,645 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
@@ -99,3 +100,778 @@
 2025-01-08 14:12:30,815 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2025-01-08 14:12:40,350 INFO root Thread-61 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 2025-01-08 14:12:40,350 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:40] "[31m[1mGET /set-admin-password HTTP/1.1[0m" 403 -
+=======
+2025-01-08 14:10:18,645 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 14:10:18,645 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 14:10:18,645 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 14:10:19,089 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 14:10:19,089 INFO werkzeug MainThread :  * Debugger PIN: 107-740-105
+2025-01-08 14:10:51,098 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:10:51,112 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:10:51] "GET / HTTP/1.1" 200 -
+2025-01-08 14:10:51,285 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:10:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-08 14:10:52,129 INFO root Thread-4 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:10:52,135 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:10:52] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:10:52,161 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:10:52] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 14:10:55,114 INFO root Thread-6 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:10:55,117 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:10:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:10:55,129 INFO root Thread-7 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:10:55,135 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:10:55] "GET /set-admin-password HTTP/1.1" 200 -
+2025-01-08 14:10:55,166 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:10:55] "GET /static/new_password_admin.css HTTP/1.1" 200 -
+2025-01-08 14:10:55,175 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:10:55] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:11:05,134 INFO root Thread-10 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:07,602 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:07] "[32mPOST /set-admin-password HTTP/1.1[0m" 302 -
+2025-01-08 14:11:07,612 INFO root Thread-11 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:07,616 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:07] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:11:07,645 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:07] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 14:11:22,371 INFO root Thread-13 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:22,376 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:11:22,386 INFO root Thread-14 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:22,401 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:22] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:11:22,434 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:22] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 14:11:25,385 INFO root Thread-16 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:25,395 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:25] "GET /results HTTP/1.1" 200 -
+2025-01-08 14:11:25,422 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:25] "GET /static/resultats.css HTTP/1.1" 200 -
+2025-01-08 14:11:25,438 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:25] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:11:27,274 INFO root Thread-19 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:27,274 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:27] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:11:27,301 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:27] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 14:11:53,867 INFO root Thread-21 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:53,869 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:53] "[32mGET /set-admin-password HTTP/1.1[0m" 302 -
+2025-01-08 14:11:53,879 INFO root Thread-22 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:53,883 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:53] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:11:53,902 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:53] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 14:11:59,298 INFO root Thread-24 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:59,298 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:59] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:11:59,306 INFO root Thread-25 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:11:59,312 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:59] "GET / HTTP/1.1" 200 -
+2025-01-08 14:11:59,334 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:11:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:00,141 INFO root Thread-27 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:00,141 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:00] "GET /register HTTP/1.1" 200 -
+2025-01-08 14:12:00,170 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:00] "GET /static/register.css HTTP/1.1" 200 -
+2025-01-08 14:12:00,183 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:00] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:12:04,258 INFO root Thread-30 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:07,635 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:07] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 14:12:07,639 INFO root Thread-31 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:07,647 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:07] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:12:07,675 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:07] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:14,362 INFO root Thread-33 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:14,368 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:12:14,378 INFO root Thread-34 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:14,378 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:14] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:12:14,408 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:14] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:16,543 INFO root Thread-36 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:16,584 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:16] "[32mPOST /vote HTTP/1.1[0m" 302 -
+2025-01-08 14:12:16,584 INFO root Thread-37 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:16,601 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:16] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:12:16,618 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:16] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:18,175 INFO root Thread-39 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:18,175 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:18] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:12:18,184 INFO root Thread-40 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:18,184 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:18] "GET / HTTP/1.1" 200 -
+2025-01-08 14:12:18,217 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:19,072 INFO root Thread-42 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:19,072 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:19] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:12:19,103 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:19] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:21,722 INFO root Thread-44 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:21,722 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:12:21,735 INFO root Thread-45 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:21,739 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:21] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:12:21,767 INFO werkzeug Thread-46 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:21] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:23,662 INFO root Thread-47 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:23,662 INFO werkzeug Thread-47 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:23] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:12:23,670 INFO root Thread-48 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:23,670 INFO werkzeug Thread-48 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:23] "GET / HTTP/1.1" 200 -
+2025-01-08 14:12:23,703 INFO werkzeug Thread-49 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:24,779 INFO root Thread-50 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:24,779 INFO werkzeug Thread-50 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:24] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:12:24,804 INFO werkzeug Thread-51 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:24] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:27,551 INFO root Thread-52 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:27,553 INFO werkzeug Thread-52 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:12:27,560 INFO root Thread-53 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:27,566 INFO werkzeug Thread-53 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:27] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:12:27,592 INFO werkzeug Thread-54 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:27] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:28,386 INFO root Thread-55 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:28,519 INFO werkzeug Thread-55 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:28] "GET /results HTTP/1.1" 200 -
+2025-01-08 14:12:28,542 INFO werkzeug Thread-56 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:28] "GET /static/resultats.css HTTP/1.1" 200 -
+2025-01-08 14:12:28,562 INFO werkzeug Thread-57 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:28] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:12:30,780 INFO root Thread-58 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:30,780 INFO werkzeug Thread-58 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:30] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:12:30,788 INFO root Thread-59 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:30,788 INFO werkzeug Thread-59 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:30] "GET / HTTP/1.1" 200 -
+2025-01-08 14:12:30,815 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-08 14:12:40,350 INFO root Thread-61 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+2025-01-08 14:12:40,350 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:40] "[31m[1mGET /set-admin-password HTTP/1.1[0m" 403 -
+2025-01-08 14:28:06,051 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 14:28:06,051 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 14:28:06,053 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 14:28:06,327 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 14:28:06,329 INFO werkzeug MainThread :  * Debugger PIN: 707-674-404
+2025-01-08 14:28:13,468 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:28:13,471 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:13] "GET / HTTP/1.1" 200 -
+2025-01-08 14:28:13,559 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:13] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 14:28:13,639 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:13] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-08 14:28:14,657 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:28:14,659 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:14] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:28:14,720 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:14] "GET /static/login.css HTTP/1.1" 200 -
+2025-01-08 14:28:14,738 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:14] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:28:43,035 INFO root Thread-8 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:28:43,037 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:43] "POST /login HTTP/1.1" 200 -
+2025-01-08 14:28:43,093 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:43] "GET /static/login.css HTTP/1.1" 200 -
+2025-01-08 14:28:43,122 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:43] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:28:47,716 INFO root Thread-11 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:28:47,717 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:28:47,728 INFO root Thread-12 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:28:47,731 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:47] "GET /set-admin-password HTTP/1.1" 200 -
+2025-01-08 14:28:47,776 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:47] "GET /static/new_password_admin.css HTTP/1.1" 200 -
+2025-01-08 14:28:47,795 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:47] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:28:50,274 INFO root Thread-15 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:28:50,279 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:50] "[32mPOST /set-admin-password HTTP/1.1[0m" 302 -
+2025-01-08 14:28:50,289 INFO root Thread-16 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:28:50,290 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:50] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:28:50,353 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:50] "GET /static/login.css HTTP/1.1" 200 -
+2025-01-08 14:28:50,374 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:50] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:28:53,647 INFO root Thread-19 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:28:53,650 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:28:53,666 INFO root Thread-20 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:28:53,672 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:53] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:28:53,739 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:53] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 14:28:53,753 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:28:53] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:29:54,603 INFO root Thread-23 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:29:54,603 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:54] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:29:54,612 INFO root Thread-24 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:29:54,612 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:54] "GET / HTTP/1.1" 200 -
+2025-01-08 14:29:54,680 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:54] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 14:29:54,699 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:54] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:29:55,986 INFO root Thread-27 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:29:56,004 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:56] "GET /register HTTP/1.1" 200 -
+2025-01-08 14:29:56,091 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:56] "GET /static/register.css HTTP/1.1" 200 -
+2025-01-08 14:29:56,129 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:56] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:29:59,041 INFO root Thread-30 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:29:59,222 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:59] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 14:29:59,231 INFO root Thread-31 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:29:59,232 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:59] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:29:59,295 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:59] "GET /static/login.css HTTP/1.1" 200 -
+2025-01-08 14:29:59,314 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:29:59] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:30:03,594 INFO root Thread-34 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:30:03,596 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:30:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:30:03,606 INFO root Thread-35 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:30:03,608 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:30:03] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:30:03,673 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:30:03] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 14:30:03,699 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:30:03] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:30:05,834 INFO root Thread-38 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:30:05,844 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:30:05] "[32mPOST /vote HTTP/1.1[0m" 302 -
+2025-01-08 14:30:05,854 INFO root Thread-39 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:30:05,856 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:30:05] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:30:05,899 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:30:05] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 14:34:39,420 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\tomse\\PycharmProjects\\Projet_crypto\\V.2\\test.py', reloading
+2025-01-08 14:34:39,501 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 14:34:39,835 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 14:34:39,837 INFO werkzeug MainThread :  * Debugger PIN: 707-674-404
+2025-01-08 14:35:18,198 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\tomse\\PycharmProjects\\Projet_crypto\\V.2\\test.py', reloading
+2025-01-08 14:35:18,256 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 14:35:18,545 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 14:35:18,547 INFO werkzeug MainThread :  * Debugger PIN: 707-674-404
+2025-01-08 14:36:52,384 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 14:36:52,384 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 14:36:52,385 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 14:36:52,652 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 14:36:52,653 INFO werkzeug MainThread :  * Debugger PIN: 707-674-404
+2025-01-08 14:36:58,818 INFO root Thread-2 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:36:58,819 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:36:58] "[31m[1mGET /vote HTTP/1.1[0m" 403 -
+2025-01-08 14:37:01,459 INFO root Thread-3 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:01,461 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:01] "GET / HTTP/1.1" 200 -
+2025-01-08 14:37:01,538 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:01] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:37:01,559 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:01] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:37:07,315 INFO root Thread-6 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:07,317 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:07] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:37:07,378 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:07] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:37:17,185 INFO root Thread-8 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:17,188 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:37:17,197 INFO root Thread-9 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:17,202 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:17] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:37:17,261 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:17] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:37:34,451 INFO root Thread-11 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:34,493 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:34] "GET /results HTTP/1.1" 200 -
+2025-01-08 14:37:34,556 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:34] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:37:35,693 INFO root Thread-13 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:35,694 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:35] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:37:35,702 INFO root Thread-14 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:35,703 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:35] "GET / HTTP/1.1" 200 -
+2025-01-08 14:37:35,766 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:35] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:37:41,361 INFO root Thread-16 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:41,362 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:41] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:37:41,424 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:41] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:37:43,911 INFO root Thread-18 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:43,912 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:37:43,923 INFO root Thread-19 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:37:43,924 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:43] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:37:43,979 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:43] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:37:49,774 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:37:49] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:38:02,566 INFO root Thread-22 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:38:02,602 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:38:02] "GET /results HTTP/1.1" 200 -
+2025-01-08 14:38:02,673 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:38:02] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:38:03,473 INFO root Thread-24 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:38:03,474 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:38:03] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:38:03,484 INFO root Thread-25 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:38:03,484 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:38:03] "GET / HTTP/1.1" 200 -
+2025-01-08 14:38:03,576 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:38:03] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:39:22,132 INFO root Thread-27 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:39:22,133 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:39:22] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:39:22,212 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:39:22] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:39:22,342 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:39:22] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:44:39,067 INFO root Thread-30 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:44:39,068 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:44:39] "GET / HTTP/1.1" 200 -
+2025-01-08 14:44:39,127 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:44:39] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:44:39,224 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:44:39] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:44:56,161 INFO root Thread-33 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:44:56,161 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:44:56] "GET / HTTP/1.1" 200 -
+2025-01-08 14:44:56,200 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:44:56] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:44:56,245 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:44:56] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:44:59,737 INFO root Thread-36 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:44:59,738 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:44:59] "GET / HTTP/1.1" 200 -
+2025-01-08 14:44:59,780 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:44:59] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:45:04,196 INFO root Thread-38 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:45:04,197 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:45:04] "GET / HTTP/1.1" 200 -
+2025-01-08 14:45:04,237 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:45:04] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:45:04,275 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:45:04] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:45:06,657 INFO root Thread-41 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:45:06,657 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:45:06] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:45:06,724 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:45:06] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:45:11,698 INFO root Thread-43 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:45:11,700 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:45:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:45:11,710 INFO root Thread-44 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:45:11,712 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:45:11] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:45:11,772 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:45:11] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:46:48,801 INFO root Thread-46 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:46:48,802 INFO werkzeug Thread-46 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:46:48] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:46:48,849 INFO werkzeug Thread-47 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:46:48] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:46:48,885 INFO werkzeug Thread-48 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:46:48] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:46:49,664 INFO root Thread-49 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:46:49,665 INFO werkzeug Thread-49 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:46:49] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:46:49,711 INFO werkzeug Thread-50 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:46:49] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:47:06,801 INFO root Thread-51 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:47:06,803 INFO werkzeug Thread-51 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:47:06] "GET / HTTP/1.1" 200 -
+2025-01-08 14:47:06,867 INFO werkzeug Thread-52 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:47:06] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:47:06,918 INFO werkzeug Thread-53 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:47:06] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:47:12,002 INFO root Thread-54 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:47:12,002 INFO werkzeug Thread-54 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:47:12] "GET / HTTP/1.1" 200 -
+2025-01-08 14:47:12,048 INFO werkzeug Thread-55 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:47:12] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:47:14,585 INFO root Thread-56 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:47:14,586 INFO werkzeug Thread-56 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:47:14] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:47:14,595 INFO root Thread-57 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:47:14,595 INFO werkzeug Thread-57 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:47:14] "GET / HTTP/1.1" 200 -
+2025-01-08 14:47:14,641 INFO werkzeug Thread-58 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:47:14] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:47:50,722 INFO werkzeug Thread-59 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:47:50] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:50:05,485 INFO root Thread-60 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:50:05,486 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:50:05] "GET / HTTP/1.1" 200 -
+2025-01-08 14:50:05,529 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:50:05] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:50:05,642 INFO werkzeug Thread-62 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:50:05] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:50:06,824 INFO root Thread-63 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:50:06,825 INFO werkzeug Thread-63 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:50:06] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:50:06,905 INFO werkzeug Thread-64 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:50:06] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:51:28,075 INFO root Thread-65 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:51:28,075 INFO werkzeug Thread-65 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:51:28] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:51:28,118 INFO werkzeug Thread-66 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:51:28] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:51:28,161 INFO werkzeug Thread-67 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:51:28] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:51:29,440 INFO root Thread-68 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:51:29,440 INFO werkzeug Thread-68 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:51:29] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:51:29,486 INFO werkzeug Thread-69 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:51:29] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:51:36,591 INFO root Thread-70 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:51:36,591 INFO werkzeug Thread-70 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:51:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:51:36,601 INFO root Thread-71 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:51:36,602 INFO werkzeug Thread-71 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:51:36] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:51:36,662 INFO werkzeug Thread-72 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:51:36] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:51:39,984 INFO werkzeug Thread-73 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:51:39] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:52:53,867 INFO root Thread-74 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:52:53,868 INFO werkzeug Thread-74 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:52:53] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:52:53,917 INFO werkzeug Thread-75 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:52:53] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:52:54,050 INFO werkzeug Thread-76 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:52:54] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:53:02,114 INFO root Thread-77 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:53:02,115 INFO werkzeug Thread-77 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:02] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:53:02,154 INFO werkzeug Thread-78 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:02] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:53:02,265 INFO werkzeug Thread-79 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:02] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:53:02,817 INFO root Thread-80 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:53:02,818 INFO werkzeug Thread-80 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:02] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:53:02,862 INFO werkzeug Thread-81 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:02] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:53:04,564 INFO root Thread-82 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:53:04,565 INFO werkzeug Thread-82 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:04] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:53:04,574 INFO root Thread-83 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:53:04,575 INFO werkzeug Thread-83 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:04] "GET / HTTP/1.1" 200 -
+2025-01-08 14:53:04,638 INFO werkzeug Thread-84 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:04] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:53:06,104 INFO root Thread-85 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:53:06,104 INFO werkzeug Thread-85 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:06] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:53:06,177 INFO werkzeug Thread-86 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:06] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:53:15,312 INFO root Thread-87 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:53:15,313 INFO werkzeug Thread-87 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:53:15,323 INFO root Thread-88 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:53:15,324 INFO werkzeug Thread-88 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:15] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:53:15,384 INFO werkzeug Thread-89 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:53:15] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:54:12,956 INFO root Thread-90 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:54:12,957 INFO werkzeug Thread-90 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:54:12] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:54:12,998 INFO werkzeug Thread-91 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:54:12] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:54:32,155 INFO root Thread-92 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:54:32,156 INFO werkzeug Thread-92 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:54:32] "GET / HTTP/1.1" 200 -
+2025-01-08 14:54:32,218 INFO werkzeug Thread-93 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:54:32] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:54:32,256 INFO werkzeug Thread-94 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:54:32] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:57:33,670 INFO root Thread-95 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:57:33,671 INFO werkzeug Thread-95 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:57:33] "GET / HTTP/1.1" 200 -
+2025-01-08 14:57:33,711 INFO werkzeug Thread-96 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:57:33] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 14:57:33,755 INFO werkzeug Thread-97 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:57:33] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:57:36,393 INFO root Thread-98 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:57:36,393 INFO werkzeug Thread-98 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:57:36] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:57:36,402 INFO root Thread-99 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:57:36,402 INFO werkzeug Thread-99 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:57:36] "GET / HTTP/1.1" 200 -
+2025-01-08 14:57:36,449 INFO werkzeug Thread-100 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:57:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-08 14:57:51,085 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 14:57:51,085 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 14:57:51,087 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 14:57:51,391 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 14:57:51,392 INFO werkzeug MainThread :  * Debugger PIN: 707-674-404
+2025-01-08 14:57:55,343 INFO root Thread-2 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:57:55,347 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:57:55] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:57:55,451 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:57:55] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 14:57:55,529 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:57:55] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-08 14:58:00,416 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:00,418 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:00] "POST /login HTTP/1.1" 200 -
+2025-01-08 14:58:00,459 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:00] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:58:05,105 INFO root Thread-7 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:05,106 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:58:05,117 INFO root Thread-8 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:05,119 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:05] "GET /set-admin-password HTTP/1.1" 200 -
+2025-01-08 14:58:05,170 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:05] "GET /static/new_password_admin.css HTTP/1.1" 200 -
+2025-01-08 14:58:05,193 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:05] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:58:07,425 INFO root Thread-11 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:07,429 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:07] "[32mPOST /set-admin-password HTTP/1.1[0m" 302 -
+2025-01-08 14:58:07,438 INFO root Thread-12 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:07,439 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:07] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:58:07,496 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:07] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:58:11,160 INFO root Thread-14 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:11,162 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 14:58:11,172 INFO root Thread-15 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:11,177 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:11] "GET /vote HTTP/1.1" 200 -
+2025-01-08 14:58:11,237 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:11] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 14:58:11,257 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:11] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:58:23,245 INFO root Thread-18 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:23,247 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:23] "GET /results HTTP/1.1" 200 -
+2025-01-08 14:58:23,328 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:23] "GET /static/resultats.css HTTP/1.1" 200 -
+2025-01-08 14:58:23,349 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:23] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:58:24,095 INFO root Thread-21 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:24,096 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:24] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 14:58:24,106 INFO root Thread-22 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:24,107 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:24] "GET / HTTP/1.1" 200 -
+2025-01-08 14:58:24,167 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:24] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 14:58:24,192 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:24] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:58:25,236 INFO root Thread-25 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:58:25,238 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:25] "GET /register HTTP/1.1" 200 -
+2025-01-08 14:58:25,301 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:25] "GET /static/register.css HTTP/1.1" 200 -
+2025-01-08 14:58:25,345 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:58:25] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:59:33,185 INFO root Thread-28 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:59:33,185 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:33] "GET / HTTP/1.1" 200 -
+2025-01-08 14:59:33,249 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:33] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 14:59:33,293 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:33] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 14:59:34,455 INFO root Thread-31 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:59:34,456 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:34] "GET /login HTTP/1.1" 200 -
+2025-01-08 14:59:34,631 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:34] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 14:59:37,213 INFO root Thread-33 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 14:59:37,231 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:37] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-01-08 14:59:37,295 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:37] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-08 14:59:37,309 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:37] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-08 14:59:37,350 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:37] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=eHiHsyg7CYBfyJryiphc HTTP/1.1" 200 -
+2025-01-08 14:59:37,350 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:37] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-08 14:59:37,373 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:59:37] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-08 15:00:07,414 INFO root Thread-39 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:07,415 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:07] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:00:10,008 INFO root Thread-40 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:10,011 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:10] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-01-08 15:00:10,061 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:10] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-08 15:00:10,065 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:10] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-08 15:00:10,108 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:10] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=eHiHsyg7CYBfyJryiphc HTTP/1.1[0m" 304 -
+2025-01-08 15:00:10,117 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:10] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-08 15:00:27,737 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 15:00:27,737 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 15:00:27,738 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 15:00:27,998 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 15:00:28,000 INFO werkzeug MainThread :  * Debugger PIN: 707-674-404
+2025-01-08 15:00:33,619 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:33,622 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:33] "GET / HTTP/1.1" 200 -
+2025-01-08 15:00:33,706 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:33] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 15:00:33,719 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:33] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:00:34,748 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:34,750 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:34] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:00:34,813 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:34] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 15:00:38,034 INFO root Thread-7 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:38,037 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:00:38,046 INFO root Thread-8 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:38,049 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:38] "GET /set-admin-password HTTP/1.1" 200 -
+2025-01-08 15:00:38,108 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:38] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 15:00:45,516 INFO root Thread-10 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:45,522 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:45] "[32mPOST /set-admin-password HTTP/1.1[0m" 302 -
+2025-01-08 15:00:45,534 INFO root Thread-11 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:45,534 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:45] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:00:45,602 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:45] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 15:00:48,555 INFO root Thread-13 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:48,558 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:00:48,569 INFO root Thread-14 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:00:48,574 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:48] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:00:48,635 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:48] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 15:00:48,655 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:00:48] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:02:22,259 INFO root Thread-17 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:22,260 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:22] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:02:22,268 INFO root Thread-18 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:22,268 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:22] "GET / HTTP/1.1" 200 -
+2025-01-08 15:02:22,322 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:22] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 15:02:22,354 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:22] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:02:28,767 INFO root Thread-21 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:28,769 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:28] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:02:28,843 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:28] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 15:02:28,877 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:28] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:02:34,510 INFO root Thread-24 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:34,662 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:34] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 15:02:34,672 INFO root Thread-25 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:34,672 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:34] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:02:34,742 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:34] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 15:02:38,588 INFO root Thread-27 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:38,590 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:02:38,600 INFO root Thread-28 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:38,602 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:38] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:02:38,658 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:38] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 15:02:38,681 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:38] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:02:40,994 INFO root Thread-31 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:41,004 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:41] "[32mPOST /vote HTTP/1.1[0m" 302 -
+2025-01-08 15:02:41,015 INFO root Thread-32 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:41,017 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:41] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:02:41,069 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:41] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:02:43,093 INFO root Thread-34 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:43,093 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:43] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:02:43,104 INFO root Thread-35 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:43,104 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:43] "GET / HTTP/1.1" 200 -
+2025-01-08 15:02:43,177 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:43] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 15:02:43,217 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:43] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:02:44,498 INFO root Thread-38 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:44,498 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:44] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:02:44,601 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:44] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 15:02:47,278 INFO root Thread-40 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:47,279 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:02:47,291 INFO root Thread-41 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:47,292 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:47] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:02:47,357 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:47] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:02:49,348 INFO root Thread-43 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:02:49,390 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:49] "GET /results HTTP/1.1" 200 -
+2025-01-08 15:02:49,461 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:49] "GET /static/resultats.css HTTP/1.1" 200 -
+2025-01-08 15:02:49,488 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:02:49] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:03:45,958 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 15:03:45,958 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 15:03:45,959 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 15:03:46,224 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 15:03:46,226 INFO werkzeug MainThread :  * Debugger PIN: 707-674-404
+2025-01-08 15:03:48,396 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:03:48,399 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:03:48] "GET / HTTP/1.1" 200 -
+2025-01-08 15:03:48,487 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:03:48] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 15:03:48,580 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:03:48] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-08 15:03:52,413 INFO root Thread-5 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:03:52,415 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:03:52] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:03:52,471 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:03:52] "GET /static/combined_minified.css HTTP/1.1" 200 -
+2025-01-08 15:03:52,506 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:03:52] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:03:59,492 INFO root Thread-8 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:00,552 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:00] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 15:04:00,562 INFO root Thread-9 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:00,564 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:00] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:04:00,626 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:00] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 15:04:03,870 INFO root Thread-11 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:03,873 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:04:03,882 INFO root Thread-12 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:03,887 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:03] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:04:03,952 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:03] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 15:04:03,981 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:03] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:04:05,633 INFO root Thread-15 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:05,633 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:05] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:04:05,642 INFO root Thread-16 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:05,643 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:05] "GET / HTTP/1.1" 200 -
+2025-01-08 15:04:05,711 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:05] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 15:04:05,732 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:05] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:04:06,828 INFO root Thread-19 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:06,829 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:06] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:04:06,930 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:06] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 15:04:15,244 INFO root Thread-21 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:15,245 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:04:15,255 INFO root Thread-22 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:15,258 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:15] "GET /set-admin-password HTTP/1.1" 200 -
+2025-01-08 15:04:15,321 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:15] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 15:04:17,548 INFO root Thread-24 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:17,553 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:17] "[32mPOST /set-admin-password HTTP/1.1[0m" 302 -
+2025-01-08 15:04:17,562 INFO root Thread-25 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:17,563 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:17] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:04:17,624 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:17] "[36mGET /static/combined_minified.css HTTP/1.1[0m" 304 -
+2025-01-08 15:04:20,394 INFO root Thread-27 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:20,396 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:04:20,407 INFO root Thread-28 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:04:20,408 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:20] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:04:20,468 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:20] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 15:04:20,487 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:04:20] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:06:57,954 INFO root Thread-31 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:06:57,955 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:06:57] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:06:57,997 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:06:57] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 15:06:58,041 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:06:58] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:06:59,709 INFO root Thread-34 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:06:59,711 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:06:59] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:06:59,752 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:06:59] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:07:02,267 INFO root Thread-36 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:02,269 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:02] "GET /results HTTP/1.1" 200 -
+2025-01-08 15:07:02,327 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:02] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:07:02,357 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:02] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:07:06,233 INFO root Thread-39 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:06,234 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:06] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:07:06,310 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:06] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:07:07,151 INFO root Thread-41 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:07,151 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:07] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:07:07,159 INFO root Thread-42 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:07,161 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:07] "GET / HTTP/1.1" 200 -
+2025-01-08 15:07:07,225 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:07] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:07:07,245 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:07] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:07:11,823 INFO root Thread-45 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:11,825 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:11] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:07:11,911 INFO werkzeug Thread-46 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:11] "GET /static/combined_username_password.css HTTP/1.1" 200 -
+2025-01-08 15:07:11,944 INFO werkzeug Thread-47 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:11] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:07:14,429 INFO root Thread-48 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:14,430 INFO werkzeug Thread-48 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:07:14,441 INFO root Thread-49 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:14,442 INFO werkzeug Thread-49 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:14] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:07:14,513 INFO werkzeug Thread-50 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:14] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:07:17,042 INFO root Thread-51 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:17,051 INFO werkzeug Thread-51 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:17] "[32mPOST /vote HTTP/1.1[0m" 302 -
+2025-01-08 15:07:17,061 INFO root Thread-52 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:17,063 INFO werkzeug Thread-52 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:17] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:07:17,106 INFO werkzeug Thread-53 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:17] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:07:20,154 INFO root Thread-54 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:20,155 INFO werkzeug Thread-54 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:20] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:07:20,164 INFO root Thread-55 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:20,165 INFO werkzeug Thread-55 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:20] "GET / HTTP/1.1" 200 -
+2025-01-08 15:07:20,216 INFO werkzeug Thread-56 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:20] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:07:21,514 INFO root Thread-57 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:21,517 INFO werkzeug Thread-57 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:21] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:07:21,583 INFO werkzeug Thread-58 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:21] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:07:24,447 INFO root Thread-59 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:07:24,448 INFO werkzeug Thread-59 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:24] "GET / HTTP/1.1" 200 -
+2025-01-08 15:07:24,512 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:07:24] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:08:42,261 INFO root Thread-61 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:08:42,261 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:42] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:08:42,327 INFO werkzeug Thread-62 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:42] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:08:46,752 INFO root Thread-63 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:08:46,753 INFO werkzeug Thread-63 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:08:46,763 INFO root Thread-64 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:08:46,764 INFO werkzeug Thread-64 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:46] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:08:46,839 INFO werkzeug Thread-65 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:46] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:08:51,877 INFO root Thread-66 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:08:51,878 INFO werkzeug Thread-66 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:51] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:08:51,888 INFO root Thread-67 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:08:51,888 INFO werkzeug Thread-67 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:51] "GET / HTTP/1.1" 200 -
+2025-01-08 15:08:51,944 INFO werkzeug Thread-68 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:51] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:08:52,000 INFO werkzeug Thread-69 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:52] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:08:54,656 INFO root Thread-70 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:08:54,656 INFO werkzeug Thread-70 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:54] "GET / HTTP/1.1" 200 -
+2025-01-08 15:08:54,697 INFO werkzeug Thread-71 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:54] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:08:55,237 INFO root Thread-72 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:08:55,237 INFO werkzeug Thread-72 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:55] "GET / HTTP/1.1" 200 -
+2025-01-08 15:08:55,278 INFO werkzeug Thread-73 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:08:55] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:10:41,674 INFO root Thread-74 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:10:41,674 INFO werkzeug Thread-74 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:41] "GET / HTTP/1.1" 200 -
+2025-01-08 15:10:41,717 INFO werkzeug Thread-75 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:41] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:10:41,758 INFO werkzeug Thread-76 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:41] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:10:42,655 INFO root Thread-77 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:10:42,655 INFO werkzeug Thread-77 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:42] "GET / HTTP/1.1" 200 -
+2025-01-08 15:10:42,702 INFO werkzeug Thread-78 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:42] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:10:44,654 INFO root Thread-79 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:10:44,655 INFO werkzeug Thread-79 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:44] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:10:44,712 INFO werkzeug Thread-80 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:44] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:10:51,154 INFO root Thread-81 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:10:51,157 INFO werkzeug Thread-81 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:10:51,167 INFO root Thread-82 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:10:51,168 INFO werkzeug Thread-82 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:51] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:10:51,228 INFO werkzeug Thread-83 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:10:51] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:11:11,167 INFO root Thread-84 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:11:11,168 INFO werkzeug Thread-84 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:11:11] "GET / HTTP/1.1" 200 -
+2025-01-08 15:11:11,227 INFO werkzeug Thread-85 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:11:11] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:11:11,258 INFO werkzeug Thread-86 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:11:11] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:11:13,844 INFO werkzeug Thread-87 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:11:13] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:13:06,105 INFO root Thread-88 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:06,106 INFO werkzeug Thread-88 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:06] "GET / HTTP/1.1" 200 -
+2025-01-08 15:13:06,157 INFO werkzeug Thread-89 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:06] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:13:06,293 INFO werkzeug Thread-90 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:06] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:13:09,563 INFO root Thread-91 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:09,564 INFO werkzeug Thread-91 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:09] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:13:09,573 INFO root Thread-92 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:09,573 INFO werkzeug Thread-92 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:09] "GET / HTTP/1.1" 200 -
+2025-01-08 15:13:09,617 INFO werkzeug Thread-93 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:09] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:13:11,796 INFO root Thread-94 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:11,796 INFO werkzeug Thread-94 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:11] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:13:11,864 INFO werkzeug Thread-95 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:11] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:13:15,993 INFO root Thread-96 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:15,994 INFO werkzeug Thread-96 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:13:16,005 INFO root Thread-97 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:16,006 INFO werkzeug Thread-97 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:16] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:13:16,062 INFO werkzeug Thread-98 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:16] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:13:17,736 INFO root Thread-99 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:17,736 INFO werkzeug Thread-99 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:17] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:13:17,745 INFO root Thread-100 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:17,745 INFO werkzeug Thread-100 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:17] "GET / HTTP/1.1" 200 -
+2025-01-08 15:13:17,799 INFO werkzeug Thread-101 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:17] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:13:18,736 INFO root Thread-102 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:18,738 INFO werkzeug Thread-102 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:18] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:13:18,800 INFO werkzeug Thread-103 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:18] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:13:22,092 INFO root Thread-104 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:22,527 INFO werkzeug Thread-104 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:22] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 15:13:22,537 INFO root Thread-105 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:22,537 INFO werkzeug Thread-105 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:22] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:13:22,592 INFO werkzeug Thread-106 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:22] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:13:25,474 INFO root Thread-107 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:25,477 INFO werkzeug Thread-107 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:13:25,487 INFO root Thread-108 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:25,489 INFO werkzeug Thread-108 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:25] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:13:25,553 INFO werkzeug Thread-109 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:25] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:13:30,534 INFO root Thread-110 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:30,544 INFO werkzeug Thread-110 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:30] "[32mPOST /vote HTTP/1.1[0m" 302 -
+2025-01-08 15:13:30,553 INFO root Thread-111 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:30,555 INFO werkzeug Thread-111 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:30] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:13:30,598 INFO werkzeug Thread-112 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:30] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 15:13:32,999 INFO root Thread-113 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:33,000 INFO werkzeug Thread-113 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:33] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:13:33,009 INFO root Thread-114 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:13:33,009 INFO werkzeug Thread-114 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:33] "GET / HTTP/1.1" 200 -
+2025-01-08 15:13:33,069 INFO werkzeug Thread-115 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:13:33] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:14:22,037 INFO root Thread-116 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:22,038 INFO werkzeug Thread-116 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:22] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:14:22,105 INFO werkzeug Thread-117 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:22] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:14:28,771 INFO root Thread-118 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:28,771 INFO werkzeug Thread-118 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:28] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:14:28,846 INFO werkzeug Thread-119 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:28] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:14:32,513 INFO root Thread-120 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:33,404 INFO werkzeug Thread-120 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:33] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 15:14:33,416 INFO root Thread-121 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:33,416 INFO werkzeug Thread-121 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:33] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:14:33,489 INFO werkzeug Thread-122 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:33] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:14:33,694 INFO root Thread-123 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:33,695 INFO werkzeug Thread-123 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:33] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:14:33,761 INFO werkzeug Thread-124 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:33] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:14:36,107 INFO root Thread-125 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:36,109 INFO werkzeug Thread-125 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:36] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 15:14:36,118 INFO root Thread-126 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:36,119 INFO werkzeug Thread-126 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:36] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:14:36,164 INFO werkzeug Thread-127 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:36] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:14:39,527 INFO root Thread-128 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:39,528 INFO werkzeug Thread-128 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:39] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 15:14:39,538 INFO root Thread-129 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:39,539 INFO werkzeug Thread-129 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:39] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:14:39,583 INFO werkzeug Thread-130 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:39] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:14:47,450 INFO root Thread-131 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:48,559 INFO werkzeug Thread-131 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:48] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 15:14:48,655 INFO root Thread-132 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:48,656 INFO werkzeug Thread-132 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:48] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:14:48,725 INFO werkzeug Thread-133 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:48] "GET /static/combined_username_password.css HTTP/1.1" 200 -
+2025-01-08 15:14:48,751 INFO werkzeug Thread-134 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:48] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-08 15:14:52,200 INFO root Thread-135 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:52,202 INFO werkzeug Thread-135 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:14:52,213 INFO root Thread-136 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:52,218 INFO werkzeug Thread-136 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:52] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:14:52,281 INFO werkzeug Thread-137 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:52] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:14:52,332 INFO werkzeug Thread-138 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:52] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:14:59,123 INFO root Thread-139 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:59,133 INFO werkzeug Thread-139 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:59] "[32mPOST /vote HTTP/1.1[0m" 302 -
+2025-01-08 15:14:59,143 INFO root Thread-140 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:14:59,145 INFO werkzeug Thread-140 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:59] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:14:59,195 INFO werkzeug Thread-141 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:59] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:14:59,231 INFO werkzeug Thread-142 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:14:59] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:16:17,098 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\tomse\\PycharmProjects\\Projet_crypto\\V.2\\application\\routes.py', reloading
+2025-01-08 15:16:17,167 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 15:16:17,474 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 15:16:17,476 INFO werkzeug MainThread :  * Debugger PIN: 707-674-404
+2025-01-08 15:16:36,390 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 15:16:36,390 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 15:16:36,391 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 15:16:36,655 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 15:16:36,657 INFO werkzeug MainThread :  * Debugger PIN: 707-674-404
+2025-01-08 15:16:40,845 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:16:40,847 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:40] "GET / HTTP/1.1" 200 -
+2025-01-08 15:16:40,935 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:40] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:16:41,020 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:41] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-08 15:16:44,718 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:16:44,720 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:44] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:16:44,781 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:44] "GET /static/combined_username_password.css HTTP/1.1" 200 -
+2025-01-08 15:16:44,805 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:44] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:16:50,452 INFO root Thread-8 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:16:50,456 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:16:50,468 INFO root Thread-9 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:16:50,471 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:50] "GET /set-admin-password HTTP/1.1" 200 -
+2025-01-08 15:16:50,531 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:50] "GET /static/combined_username_password.css HTTP/1.1" 200 -
+2025-01-08 15:16:50,548 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:50] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:16:54,907 INFO root Thread-12 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:16:54,912 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:54] "[32mPOST /set-admin-password HTTP/1.1[0m" 302 -
+2025-01-08 15:16:54,922 INFO root Thread-13 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:16:54,923 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:54] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:16:54,980 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:54] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:16:57,921 INFO root Thread-15 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:16:57,923 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:16:57,933 INFO root Thread-16 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:16:57,938 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:57] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:16:57,997 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:57] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:16:58,017 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:16:58] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:17:02,474 INFO root Thread-19 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:02,477 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:02] "GET /results HTTP/1.1" 200 -
+2025-01-08 15:17:02,534 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:02] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:17:02,563 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:02] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:17:08,589 INFO root Thread-22 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:08,590 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:08] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:17:08,598 INFO root Thread-23 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:08,599 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:08] "GET / HTTP/1.1" 200 -
+2025-01-08 15:17:08,670 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:08] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:17:08,699 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:08] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:17:09,670 INFO root Thread-26 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:09,672 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:09] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:17:09,749 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:09] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:17:13,376 INFO root Thread-28 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:14,060 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:14] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-01-08 15:17:14,069 INFO root Thread-29 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:14,069 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:14] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:17:14,145 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:14] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:17:16,925 INFO root Thread-31 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:16,927 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:17:16,937 INFO root Thread-32 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:16,939 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:16] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:17:16,994 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:16] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 15:17:17,017 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:17] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 15:17:21,101 INFO root Thread-35 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:21,110 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:21] "[32mPOST /vote HTTP/1.1[0m" 302 -
+2025-01-08 15:17:21,119 INFO root Thread-36 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:21,122 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:21] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:17:21,165 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:21] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:17:24,152 INFO root Thread-38 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:24,152 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:24] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:17:24,160 INFO root Thread-39 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:17:24,161 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:24] "GET / HTTP/1.1" 200 -
+2025-01-08 15:17:24,220 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:17:24] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:18:22,071 INFO root Thread-41 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:18:22,071 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:22] "GET /login HTTP/1.1" 200 -
+2025-01-08 15:18:22,142 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:22] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 15:18:24,690 INFO root Thread-43 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:18:24,691 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 15:18:24,700 INFO root Thread-44 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:18:24,702 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:24] "GET /vote HTTP/1.1" 200 -
+2025-01-08 15:18:24,760 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:24] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:18:26,527 INFO root Thread-46 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:18:26,567 INFO werkzeug Thread-46 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:26] "GET /results HTTP/1.1" 200 -
+2025-01-08 15:18:26,648 INFO werkzeug Thread-47 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:26] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:18:27,698 INFO root Thread-48 (process_request_thread) : User accessed /logout from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:18:27,698 INFO werkzeug Thread-48 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:27] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2025-01-08 15:18:27,708 INFO root Thread-49 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:18:27,709 INFO werkzeug Thread-49 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:27] "GET / HTTP/1.1" 200 -
+2025-01-08 15:18:27,769 INFO werkzeug Thread-50 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:27] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 15:18:29,744 INFO root Thread-51 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2025-01-08 15:18:29,745 INFO werkzeug Thread-51 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:29] "GET /register HTTP/1.1" 200 -
+2025-01-08 15:18:29,805 INFO werkzeug Thread-52 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 15:18:29] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+>>>>>>> 4b08efd (combined the css files togehter)
