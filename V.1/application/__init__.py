@@ -9,7 +9,7 @@ def create_app():
     app.secret_key = '515bffd66952e6174d49b6440b24ccf692d4e9dd6456f3f3'
     
     # Import and register the blueprint using relative import
-    from .  import routes
+    from application import routes
     app.register_blueprint(routes.bp)
 
     return app

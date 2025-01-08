@@ -3,7 +3,6 @@ from python_files import database
 from python_files import algorithme_de_chiffrement
 import os
 import hashlib
-from app import app
 
 bp = Blueprint('routes', __name__)
 
@@ -23,7 +22,8 @@ def login():
 		
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		cursor.execute(f"SELECT * FROM users WHERE username = '%s' AND password = '%s'" % (username, hashlib.sha1(password.encode()).hexdigest()))
+		query = f"SELECT * FROM users WHERE username = '{username}' AND password = '{hashlib.sha1(password.encode()).hexdigest()}'" 
+		cursor.execute(query)
 		user = cursor.fetchone()
 		conn.close()
 		
@@ -50,24 +50,24 @@ def register():
 	if request.method == 'POST':
 		username = request.form['username']
 		password = request.form['password']
-		password_username = password+username
 		
 		# Vérification si l'utilisateur existe déjà
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		cursor.execute(f"SELECT * FROM users WHERE username = '%s'" % (username))
+		query = f"SELECT * FROM users WHERE username = '{username}'"
+		cursor.execute(query)
 		existing_user = cursor.fetchone()
 
 		if existing_user:
 			flash('Ce pseudo est déjà pris.', 'error')
 			return redirect('/register')  # Redirige vers la page d'inscription si l'utilisateur existe déjà
-		hashed_password = hashlib.sha1(password_username.encode()).hexdigest()
+		hashed_password = hashlib.sha1(password.encode()).hexdigest()
 
 		# Génération de la paire de clés RSA pour cet utilisateur
 		public_key, private_key = algorithme_de_chiffrement.Cryptography.generate_rsa_keys()
 
 		# Enregistrer le nouvel utilisateur avec la clé publique RSA et has_voted = 0
-		cursor.execute(f"INSERT INTO users (username, password, rsa_public_key, has_voted) VALUES ('%s', '%s', '%s', '%s')" % (username, hashed_password, public_key, 0))
+		cursor.execute("INSERT INTO users (username, password, rsa_public_key, has_voted, is_admin) VALUES (?, ?, ?, ?, ?)", (username, hashed_password, public_key, 0, 0))
 		conn.commit()
 		conn.close()
 
@@ -132,7 +132,8 @@ def vote():
 		
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		cursor.execute(f"SELECT rsa_public_key FROM users WHERE id = '%s'" % (user_id))
+		query = f"SELECT rsa_public_key FROM users WHERE id = '{user_id}'"
+		cursor.execute(query)
 		user = cursor.fetchone()
 		conn.close()
 
@@ -143,14 +144,15 @@ def vote():
 		# Stocker le vote chiffré et la clé publique dans la base de données
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		cursor.execute(f"INSERT INTO votes (vote, aes_key, user_public_key) VALUES ('%s', '%s', '%s')" % (encrypted_vote, encrypted_aes_key, public_key))
+		cursor.execute("INSERT INTO votes (vote, aes_key, user_public_key) VALUES (?, ?, ?)", (encrypted_vote, encrypted_aes_key, public_key))
 		conn.commit()
 		conn.close()
 
 		# Marquer l'utilisateur comme ayant voté
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		cursor.execute(f"UPDATE users SET has_voted = 1 WHERE id = '%s'" % (user_id))
+		query = f"UPDATE users SET has_voted = 1 WHERE id = '{user_id}'"
+		cursor.execute(query)
 		conn.commit()
 		conn.close()
 
@@ -159,7 +161,7 @@ def vote():
 
 	return render_template('vote.html', has_voted=False)
 
-
+from app import app
 @app.errorhandler(403)
 def forbidden_error(error):
     return render_template('403.html'), 403

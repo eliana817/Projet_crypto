@@ -1,7 +1,6 @@
 import sqlite3
 from python_files import algorithme_de_chiffrement
 import os
-from app import app
 from flask import render_template
 import hashlib
 
@@ -45,9 +44,8 @@ def create_admin_user():
     if count == 0:  # Si aucun utilisateur n'existe, créer un admin par défaut
         username = "admin"
         password = "admin"  # Mot de passe pour l'admin
-        password_usename = username + password
         
-        hashed_password = hashlib.sha1(password_usename.encode()).hexdigest()
+        hashed_password = hashlib.sha1(password.encode()).hexdigest()
         public_key, private_key = algorithme_de_chiffrement.Cryptography.generate_rsa_keys()
         cursor.execute("INSERT INTO users (username, password, rsa_public_key, has_voted, is_admin) VALUES (?, ?, ?, ?, ?)", 
                        (username, hashed_password, public_key, 0, 1))  # is_admin = 1 pour admin
@@ -58,7 +56,3 @@ def create_admin_user():
         os.makedirs("private_keys", exist_ok=True)
         with open(private_key_path, "wb") as f:
             f.write(private_key)
-
-@app.errorhandler(403)
-def forbidden_error(error):
-    return render_template('403.html'), 403
