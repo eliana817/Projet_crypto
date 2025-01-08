@@ -164,8 +164,3 @@ def vote():
 		return redirect('/vote')
 
 	return render_template('vote.html', has_voted=False, is_admin=False)
-
-from app import app
-@app.errorhandler(403)
-def forbidden_error(error):
-	return render_template('403.html'), 403
