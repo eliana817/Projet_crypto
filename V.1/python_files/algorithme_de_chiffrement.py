@@ -35,6 +35,15 @@ class Cryptography:
 
         return encrypted_vote, encrypted_aes_key
 
+    @staticmethod
+    def is_admin(user_id):
+        """Vérifie si l'utilisateur est un administrateur."""
+        conn = database.connect_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT is_admin FROM users WHERE id = ?", (user_id,))
+        result = cursor.fetchone()
+        conn.close()
+        return result and result[0] == 1
 
     # Vérification si l'utilisateur a déjà voté
     @staticmethod

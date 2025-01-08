@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-color: #f8f4e2; /* Beige clair pour un fond doux et appétissant */
+    background-color: #f8f4e2; /* Beige clair */
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -77,21 +77,55 @@ main {
     padding: 20px;
 }
 
-/* Conteneur de vote */
-.vote-container {
+/* Conteneur des résultats */
+.results-container, .vote-container, .card {
     background-color: #fff3e3;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
 }
 
-.vote-container h2 {
-    font-size: 24px;
+.results-container h2, .vote-container h2, .card h3 {
+    font-size: 28px;
     margin-bottom: 20px;
     color: #6f4f1e;
+}
+
+/* Conteneur des cartes */
+.card-container {
+    display: flex;
+    flex-direction: row; /* Aligne les cartes horizontalement */
+    gap: 20px; /* Espacement entre les cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+    flex-wrap: wrap; /* Permet aux cartes de revenir à la ligne si nécessaire */
+}
+
+/* Style des cartes */
+.card {
+    width: 300px; /* Ajuste la largeur des cartes */
+    text-align: center;
+}
+
+.result-item, .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #6f4f1e;
+}
+
+.result-item h3, .card h3 {
+    font-size: 22px;
+    color: #6f4f1e;
+    margin-bottom: 10px;
+}
+
+.result-item p, .card p {
+    font-size: 18px;
+    color: #555;
 }
 
 /* Formulaire de vote */
@@ -104,7 +138,7 @@ form {
 select, button {
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #6f4f1e; /* Bordure chocolat */
+    border: 2px solid #6f4f1e;
     border-radius: 5px;
 }
 
@@ -129,6 +163,18 @@ button:hover {
     font-size: 18px;
     color: #6f4f1e;
     margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #6f4f1e;
+    border-radius: 8px;
+    background-color: #fff3e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .vote-message button {
@@ -137,6 +183,8 @@ button:hover {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .vote-message button:hover {
@@ -165,4 +213,42 @@ footer {
     color: white;
     padding: 10px;
     font-size: 14px;
+}
+
+/* Style du profil */
+.profile-box {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #444;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+
+.profile-name {
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Ajouter un style pour la zone où sont affichés les boutons */
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-buttons a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header-buttons a:hover {
+    background-color: #0056b3;
 }

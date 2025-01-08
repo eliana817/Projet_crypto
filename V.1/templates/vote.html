@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de Vote</title>
-    <link rel="stylesheet" href="../static/vote.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="../static/combined_css.css"> <!-- Lien vers le fichier CSS -->
 </head>
 <body>
     <!-- Bandeau supérieur -->
     <header>
         <h1>Bienvenue sur la page de vote</h1>
         <div class="header-buttons">
-            <a href="/logout" class="btn">Se déconnecter</a>
-            <a href="/results" class="btn">Voir les résultats</a>
+            <!-- Formulaire de déconnexion -->
+            <form action="/logout" method="POST" style="display:inline;">
+                <button type="submit" class="btn">Se déconnecter</button>
+            </form>
+        
+            {% if is_admin %}
+                <a href="{{ url_for('routes.results') }}" class="btn">Voir les résultats</a>
+            {% endif %}
+            
+            <!-- Afficher le carré avec le nom de l'utilisateur si connecté -->
+            {% if 'user_id' in session %}
+                <div class="profile-box">
+                    <span class="profile-name">{{ session['username'] }}</span>
+                </div>
+            {% endif %}
         </div>
+
     </header>
 
     <!-- Contenu principal -->
@@ -30,28 +44,30 @@
             {% endwith %}
 
             {% if not has_voted %}
-                <div class="vote-form">
-                    <h2>Exprimez votre choix !</h2>
-                    <form method="POST">
-                        <label for="vote">Choisissez une option :</label>
-                        <select name="vote" id="vote" required>
-                            <option value="Pain au Chocolat">Pain au Chocolat</option>
-                            <option value="Chocolatine">Chocolatine</option>
-                        </select>
-                        <button type="submit">Voter</button>
-                    </form>
-                </div>
+                {% if is_admin %}
+                    <div class="vote-message">
+                        <p>L'administrateur ne peut pas voter.</p>
+                    </div>
+                {% else %}
+                    <div class="vote-form">
+                        <h2>Exprimez votre choix !</h2>
+                        <form method="POST">
+                            <label for="vote">Choisissez une option :</label>
+                            <select name="vote" id="vote" required>
+                                <option value="Brioche">Pain au chocolat</option>
+                                <option value="Chocolatine">Chocolatine</option>
+                            </select>
+                            <button type="submit">Voter</button>
+                        </form>
+                    </div>
+                {% endif %}
             {% else %}
                 <div class="vote-message">
-                    <p>Merci pour votre vote ! Vous avez déjà voté ou vous venez de voter.</p>
-                    <a href="{{ url_for('routes.results') }}">
-                        <button>Voir les résultats</button>
-                    </a>
+                    <p>Merci pour votre vote !</p>
                 </div>
             {% endif %}
         </div>
     </main>
-
     <footer>
         <p>© 2025 Plateforme de vote - Tous droits réservés</p>
     </footer>

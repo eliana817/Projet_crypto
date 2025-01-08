@@ -202,3 +202,35 @@
 2025-01-08 14:12:30,815 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2025-01-08 14:12:40,350 INFO root Thread-61 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 2025-01-08 14:12:40,350 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 14:12:40] "[31m[1mGET /set-admin-password HTTP/1.1[0m" 403 -
+2025-01-08 16:05:10,303 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 16:05:10,303 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 16:05:10,306 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 16:05:11,174 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 16:05:11,174 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 16:05:23,222 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 16:05:23,248 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:23] "GET / HTTP/1.1" 200 -
+2025-01-08 16:05:23,470 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:23] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-08 16:05:23,614 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:23] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-08 16:05:26,112 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 16:05:26,126 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:26] "GET /login HTTP/1.1" 200 -
+2025-01-08 16:05:26,174 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:26] "GET /static/combined_username_password.css HTTP/1.1" 200 -
+2025-01-08 16:05:26,351 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:26] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 16:05:32,543 INFO root Thread-8 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 16:05:32,543 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 16:05:32,575 INFO root Thread-9 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 16:05:32,582 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:32] "GET /set-admin-password HTTP/1.1" 200 -
+2025-01-08 16:05:32,638 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:32] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 16:05:32,773 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:32] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 16:05:36,425 INFO root Thread-12 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 16:05:36,449 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:36] "[32mPOST /set-admin-password HTTP/1.1[0m" 302 -
+2025-01-08 16:05:36,470 INFO root Thread-13 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 16:05:36,471 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:36] "GET /login HTTP/1.1" 200 -
+2025-01-08 16:05:36,519 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:36] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-08 16:05:36,663 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:36] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 16:05:39,462 INFO root Thread-16 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 16:05:39,471 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 16:05:39,498 INFO root Thread-17 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 16:05:39,518 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:39] "GET /vote HTTP/1.1" 200 -
+2025-01-08 16:05:39,615 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:39] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
+2025-01-08 16:05:39,727 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 16:05:39] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -

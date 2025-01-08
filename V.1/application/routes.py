@@ -122,10 +122,14 @@ def vote():
 	
 	user_id = session['user_id']
 
+	if algorithme_de_chiffrement.Cryptography.is_admin(user_id):
+		flash('L\'administrateur ne peut pas voter.', 'info')
+		return render_template('vote.html', has_voted=False, is_admin=True)  # Ne permet pas de voter à l'admin
+
 	# Vérifier si l'utilisateur a déjà voté
 	if algorithme_de_chiffrement.Cryptography.has_user_voted(user_id):
 		#flash('Vous avez déjà voté !', 'info')
-		return render_template('vote.html', has_voted=True)
+		return render_template('vote.html', has_voted=True, is_admin = False)
 
 	if request.method == 'POST':
 		vote = request.form['vote']
@@ -159,9 +163,9 @@ def vote():
 		flash(f'Vous avez voté pour: {vote}', 'success')
 		return redirect('/vote')
 
-	return render_template('vote.html', has_voted=False)
+	return render_template('vote.html', has_voted=False, is_admin=False)
 
 from app import app
 @app.errorhandler(403)
 def forbidden_error(error):
-    return render_template('403.html'), 403
+	return render_template('403.html'), 403
