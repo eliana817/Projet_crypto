@@ -1,6 +1,5 @@
 from application import create_app
 from python_files import database
-import os
 
 app = create_app()  # L'appel de create_app s'assure que la clé secrète est bien générée dans init.py
 

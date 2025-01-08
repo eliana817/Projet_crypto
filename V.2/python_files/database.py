@@ -1,12 +1,7 @@
 import sqlite3
-<<<<<<< HEAD
-from python_files import algorithme_de_chiffrement
-=======
-import os
 from werkzeug.security import generate_password_hash
 from python_files import algorithme_de_chiffrement
 from hashlib import sha256
->>>>>>> 245a12215a1581aa677cf5ecbd1f61cc4bc86bb1
 
 # Function to connect to the SQLite database
 def connect_db():
@@ -20,7 +15,6 @@ def create_user_table():
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         username TEXT UNIQUE NOT NULL,
                         password TEXT NOT NULL,
-                        rsa_private_key BLOB NOT NULL,
                         rsa_public_key BLOB NOT NULL,
                         rsa_private_key BLOB NOT NULL,
                         has_voted INTEGER DEFAULT 0,
