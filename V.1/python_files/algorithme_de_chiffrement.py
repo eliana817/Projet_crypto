@@ -1,7 +1,6 @@
 from Crypto.Cipher import AES
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
-from Crypto.Hash import HMAC, SHA256
 from Crypto.Random import get_random_bytes
 from Crypto.Util.Padding import pad, unpad
 import base64
@@ -13,7 +12,7 @@ class Cryptography:
     # Générer une paire de clés RSA
     @staticmethod
     def generate_rsa_keys():
-        key = RSA.generate(2048)  # Génère une clé RSA de 2048 bits
+        key = RSA.generate(512)  # Génère une clé RSA de 512 bits
         private_key = key.export_key()
         public_key = key.publickey().export_key()
         return public_key, private_key
@@ -21,9 +20,9 @@ class Cryptography:
     # Fonction de chiffrement du vote avec AES, RSA et HMAC
     @staticmethod
     def encrypt_vote(vote, public_key):
-        aes_key = get_random_bytes(32)  # 256-bit AES key
+        aes_key = get_random_bytes(16)  # 128-bit AES key
         iv = get_random_bytes(AES.block_size)
-        cipher_aes = AES.new(aes_key, AES.MODE_CBC, iv)
+        cipher_aes = AES.new(aes_key, AES.MODE_ECB)
         ciphertext = cipher_aes.encrypt(pad(vote.encode(), AES.block_size))
 
         rsa_key = RSA.import_key(public_key)
@@ -75,7 +74,7 @@ class Cryptography:
         iv = encrypted_vote_data[:AES.block_size]
         ciphertext = encrypted_vote_data[AES.block_size:]
 
-        cipher_aes = AES.new(aes_key, AES.MODE_CBC, iv)
+        cipher_aes = AES.new(aes_key, AES.MODE_ECB)
         decrypted_vote = unpad(cipher_aes.decrypt(ciphertext), AES.block_size).decode('utf-8')
 
         return decrypted_vote
