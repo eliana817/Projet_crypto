@@ -20,7 +20,7 @@ class Cryptography:
     # Fonction de chiffrement du vote avec AES, RSA et HMAC
     @staticmethod
     def encrypt_vote(vote, public_key):
-        aes_key = get_random_bytes(16)  # 128-bit AES key
+        aes_key = get_random_bytes(5)  # 40-bit AES key
         iv = get_random_bytes(AES.block_size)
         cipher_aes = AES.new(aes_key, AES.MODE_ECB)
         ciphertext = cipher_aes.encrypt(pad(vote.encode(), AES.block_size))
