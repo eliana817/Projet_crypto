@@ -196,10 +196,10 @@ def results():
         decrypted_votes.append(decrypted_vote)
 
     # Compter les votes pour chaque option
-    vote_count = {"Brioche": 0, "Chocolatine": 0}
+    vote_count = {"Pain au chocolat": 0, "Chocolatine": 0}
     for vote in decrypted_votes:
-        if vote == "Brioche":
-            vote_count["Brioche"] += 1
+        if vote == "Pain au chocolat":
+            vote_count["Pain au chocolat"] += 1
         elif vote == "Chocolatine":
             vote_count["Chocolatine"] += 1
     
