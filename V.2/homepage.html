@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../static/combined_css.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur notre plateforme de vote</h1>
+        <div class="header-buttons">
+            {% if is_logged_in %}
+                <!-- Si connecté, afficher le message et une déconnexion -->
+                <span>Bonjour, {{ username }} !</span>
+        
+                <!-- Formulaire pour la déconnexion -->
+                <form action="/logout" method="POST" style="display:inline;">
+                    <button type="submit" class="btn">Se déconnecter</button>
+                </form>
+            {% else %}
+                <a href="/login" class="btn">Se connecter</a>
+                <a href="/register" class="btn">S'inscrire</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <!-- Card 1: Histoire du pain au chocolat -->
+            <div class="card">
+                <h3>Le Pain au Chocolat</h3>
+                <p>Le pain au chocolat, est une viennoiserie constituée d'une pâte levée feuilletée, identique à celle du croissant, rectangulaire et enroulée sur une ou plusieurs barres de chocolat.</p>
+            </div>
+
+            <!-- Card 2: Histoire de la Chocolatine -->
+            <div class="card">
+                <h3>La Chocolatine</h3>
+                <p>Chocola quoi ???</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de connexion</title>
+    <link rel="stylesheet" href="../static/combined_username_password.css">
+</head>
+<body>
+    <header>
+        <h1>Page de connexion</h1>
+    </header>
+
+    <form action="/login" method="POST">
+        <label for="username">Pseudo :</label>
+        <input type="text" name="username" required><br>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" name="password" required><br>
+
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <a href="/register">Pas encore inscrit ? Créez un compte ici</a>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
