@@ -54,6 +54,14 @@ header h1 {
     gap: 10px;
 }
 
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6f4f1e; /* Bordure chocolat */
+    border-radius: 5px;
+    border: none;
+}
+
 .header-buttons .btn {
     background-color: #6f4f1e; /* Chocolat */
     color: white;
@@ -127,4 +135,25 @@ footer {
     color: white;
     padding: 10px;
     font-size: 14px;
+}
+
+
+/* Ajouter un style pour la zone où sont affichés les boutons */
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-buttons a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header-buttons a:hover {
+    background-color: #0056b3;
 }
