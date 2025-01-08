@@ -1,10 +1,7 @@
-from flask import Blueprint, render_template, request, redirect, flash, session, abort
+from flask import Blueprint, render_template, request, redirect, flash, session, abort, make_response
 from python_files import database
 from python_files import algorithme_de_chiffrement
-from werkzeug.security import generate_password_hash, check_password_hash
-import os
 import logging
-from app import app
 
 bp = Blueprint('routes', __name__)
 
@@ -18,153 +15,154 @@ def log_user_activity():
 
 @bp.route('/')
 def homepage():
-    return render_template('homepage.html')
+    """Home page with user login verification."""
+    is_logged_in = 'user_id' in session
+    username = session.get('username', None)
+    admin_status = False
+
+    if is_logged_in:
+        user_id = session['user_id']
+        admin_status = algorithme_de_chiffrement.Cryptography.is_admin(user_id)
+
+    return render_template('homepage.html', is_logged_in=is_logged_in, username=username, is_admin=admin_status)
 
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
+    """Login page for users."""
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        #logging.info(f"User submitted data: {request.form}")
-        # Vérifier si le nom d'utilisateur est valide
+
         if not algorithme_de_chiffrement.Cryptography.is_valid_username(username):
-            flash("Le pseudo ne peut contenir que des lettres, des chiffres, des tirets et des underscores.", "error")
+            flash("Username can only contain letters, digits, hyphens, and underscores.", "error")
             return redirect('/login')
 
+        hashed_username = algorithme_de_chiffrement.Cryptography.hash_username(username)
         conn = database.connect_db()
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
+        cursor.execute("SELECT * FROM users WHERE username = ?", (hashed_username,))
         user = cursor.fetchone()
         conn.close()
-        
-        if user:
-            # Hash le 'username + password' et compare avec le hash stocké
-            if check_password_hash(user[2], username + password):  # user[2] -> hash du mot de passe
-                session['user_id'] = user[0]  # Enregistrement de l'ID de l'utilisateur dans la session
-                flash('Connexion réussie !', 'success')
-                return redirect('/vote')  # Redirige vers la page de vote
-            else:
-                flash('Pseudo ou mot de passe incorrect.', 'error')
+
+        #logging.info(f"User submitted data: {user}")
+
+        if user and algorithme_de_chiffrement.Cryptography.check_password(user[2], username + password):
+            session['user_id'] = user[0]
+            session['username'] = username
+            flash('Login successful!', 'success')
+            return redirect('/vote')
         else:
-            flash('Pseudo ou mot de passe incorrect.', 'error')
-    
+            flash('Incorrect username or password.', 'error')
+
     return render_template('login.html')
 
 
-@bp.route('/logout', methods=['GET', 'POST'])
+
+@bp.route('/logout', methods=['POST'])
 def logout():
-    if request.method == 'POST':
-        session.clear()  # Efface toutes les données de session (déconnexion)
-        flash('Déconnexion réussie', 'success')
-        return redirect('/')  # Redirige l'utilisateur vers la page d'accueil après la déconnexion
-    return redirect('/')
+    """Logout the user."""
+    session.clear()
+    response = make_response(redirect('/'))
+    response.set_cookie('session', '', max_age=0)
+    response.delete_cookie('session')
+
+    flash('Logout successful', 'success')
+    return response
 
 @bp.route('/register', methods=['GET', 'POST'])
 def register():
+    """User registration page."""
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        
-        # Vérifier si le nom d'utilisateur est valide
+
         if not algorithme_de_chiffrement.Cryptography.is_valid_username(username):
-            flash("Le pseudo ne peut contenir que des lettres, des chiffres, des tirets et des underscores.", "error")
+            flash("Username can only contain letters, digits, hyphens, and underscores.", "error")
             return redirect('/register')
-        
+
+        hashed_username = algorithme_de_chiffrement.Cryptography.hash_username(username)
         conn = database.connect_db()
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
+        cursor.execute("SELECT * FROM users WHERE username = ?", (hashed_username,))
         existing_user = cursor.fetchone()
+        conn.close()
 
         if existing_user:
-            flash('Ce pseudo est déjà pris.', 'error')
+            flash('This username is already taken.', 'error')
             return redirect('/register')
-        
-        hashed_password = generate_password_hash(username + password)  # Hash du username + mot de passe
+
+        hashed_password = algorithme_de_chiffrement.Cryptography.hash_password(username + password)
         public_key, private_key = algorithme_de_chiffrement.Cryptography.generate_rsa_keys()
 
-        cursor.execute("INSERT INTO users (username, password, rsa_public_key, has_voted, is_admin) VALUES (?, ?, ?, ?, ?)", 
-                       (username, hashed_password, public_key, 0, 0))  # Par défaut, is_admin = 0
+        # Save private key directly to the database
+        rsa_private_key = private_key
+
+        conn = database.connect_db()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO users (username, password, rsa_public_key, rsa_private_key, has_voted, is_admin) VALUES (?, ?, ?, ?, ?, ?)", 
+                       (hashed_username, hashed_password, public_key, rsa_private_key, 0, 0))
         conn.commit()
         conn.close()
 
-        private_key_path = f"private_keys/{username}_private_key.pem"
-        os.makedirs("private_keys", exist_ok=True)
-        with open(private_key_path, "wb") as f:
-            f.write(private_key)
-
-        flash('Utilisateur inscrit avec succès. Vous pouvez maintenant vous connecter.', 'success')
+        flash('User successfully registered. You can now log in.', 'success')
         return redirect('/login')
 
     return render_template('register.html')
 
 @bp.route('/results')
 def results():
-    # Vérifier si l'utilisateur est connecté, sinon renvoyer une erreur 403
-    if 'user_id' not in session:
-        abort(403)  # Retourne une erreur 403 si l'utilisateur n'est pas connecté
+    """Results page for admins."""
+    if 'user_id' not in session or not algorithme_de_chiffrement.Cryptography.is_admin(session['user_id']):
+        abort(403)
 
-    user_id = session['user_id']
-    if not algorithme_de_chiffrement.Cryptography.is_admin(user_id):  # Vérifier si l'utilisateur est un administrateur
-        flash('Vous n\'êtes pas autorisé à voir les résultats.', 'error')
-        return redirect('/')
-
-    # Récupérer tous les votes de la base de données
     conn = database.connect_db()
     cursor = conn.cursor()
     cursor.execute("SELECT vote, aes_key, user_public_key, hmac_digest, hmac_key FROM votes")
     votes = cursor.fetchall()
     conn.close()
 
-    # Déchiffrer chaque vote
     decrypted_votes = []
-
     for encrypted_vote, encrypted_aes_key, user_public_key, hmac_digest, hmac_key in votes:
         decrypted_vote = algorithme_de_chiffrement.Cryptography.decrypt_vote(encrypted_vote, encrypted_aes_key, hmac_digest, hmac_key, user_public_key)
         decrypted_votes.append(decrypted_vote)
 
-    # Compter les votes pour chaque option
-    vote_count = {"Pain au chocolat": 0, "Chocolatine": 0}
+    vote_count = {"Brioche": 0, "Ticket à Gratter": 0}
     for vote in decrypted_votes:
-        if vote == "Pain au chocolat":
-            vote_count["Pain au chocolat"] += 1
-        elif vote == "Chocolatine":
-            vote_count["Chocolatine"] += 1
-    
-    return render_template('results.html', vote_count=vote_count)
+        if vote == "Brioche":
+            vote_count["Brioche"] += 1
+        elif vote == "Ticket à Gratter":
+            vote_count["Ticket à Gratter"] += 1
+
+    return render_template('resultats.html', vote_count=vote_count)
 
 
 
 @bp.route('/vote', methods=['GET', 'POST'])
 def vote():
-    # Vérifier si l'utilisateur est connecté, sinon renvoyer une erreur 403
+    """Voting page for users."""
     if 'user_id' not in session:
-        abort(403)  # Retourne une erreur 403 si l'utilisateur n'est pas connecté
+        abort(403)
 
     user_id = session['user_id']
 
-    # Vérifier si l'utilisateur est un administrateur
     if algorithme_de_chiffrement.Cryptography.is_admin(user_id):
-        flash('L\'administrateur ne peut pas voter.', 'info')
-        return render_template('vote.html', has_voted=False, is_admin=True)  # Ne permet pas de voter à l'admin
+        flash('Administrator cannot vote.', 'info')
+        return render_template('vote.html', has_voted=False, is_admin=True)
 
-    # Vérifier si l'utilisateur a déjà voté
     if algorithme_de_chiffrement.Cryptography.has_user_voted(user_id):
         return render_template('vote.html', has_voted=True, is_admin=False)
 
     if request.method == 'POST':
         vote = request.form['vote']
-
         conn = database.connect_db()
         cursor = conn.cursor()
-        cursor.execute("SELECT rsa_public_key FROM users WHERE id = ?", (user_id,))
+        cursor.execute("SELECT rsa_public_key FROM users WHERE id = ?", (user_id,)) 
         user = cursor.fetchone()
         conn.close()
 
         public_key = user[0]
-
         encrypted_vote, encrypted_aes_key, hmac_digest, hmac_key = algorithme_de_chiffrement.Cryptography.encrypt_vote(vote, public_key)
 
-        # Stocker le vote chiffré et la clé publique dans la base de données
         conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("INSERT INTO votes (vote, aes_key, user_public_key, hmac_digest, hmac_key) VALUES (?, ?, ?, ?, ?)", 
@@ -172,19 +170,19 @@ def vote():
         conn.commit()
         conn.close()
 
-        # Marquer l'utilisateur comme ayant voté
         conn = database.connect_db()
         cursor = conn.cursor()
         cursor.execute("UPDATE users SET has_voted = 1 WHERE id = ?", (user_id,))
         conn.commit()
         conn.close()
 
-        flash(f'Vous avez voté pour: {vote}', 'success')
+        flash(f'You voted for: {vote}', 'success')
         return redirect('/vote')
 
     return render_template('vote.html', has_voted=False, is_admin=False)
 
 
+from app import app
 @app.errorhandler(403)
 def forbidden_error(error):
     return render_template('403.html'), 403

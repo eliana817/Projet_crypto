@@ -7,12 +7,24 @@ from Crypto.Util.Padding import pad, unpad
 import base64
 from python_files import database
 import re
+from hashlib import sha256
 
 ############# Functions ################
 class Cryptography:
 
+    def hash_password(password):
+        """Hashes a password using SHA256."""
+        return sha256(password.encode('utf-8')).hexdigest()
+
+    def hash_username(username):
+        """Hashes a username using SHA256."""
+        return sha256(username.encode('utf-8')).hexdigest()
+
+    def check_password(hashed_password, input_password):
+        """Checks if a password matches a hashed password."""
+        return hashed_password == sha256(input_password.encode('utf-8')).hexdigest()
+
     # Générer une paire de clés RSA
-    @staticmethod
     def generate_rsa_keys():
         key = RSA.generate(2048)  # Génère une clé RSA de 2048 bits
         private_key = key.export_key()
@@ -20,7 +32,7 @@ class Cryptography:
         return public_key, private_key
 
     # Fonction de chiffrement du vote avec AES, RSA et HMAC
-    @staticmethod
+    
     def encrypt_vote(vote, public_key):
         aes_key = get_random_bytes(32)  # 256-bit AES key
         iv = get_random_bytes(AES.block_size)
@@ -42,7 +54,7 @@ class Cryptography:
 
 
     # Vérification si l'utilisateur a déjà voté
-    @staticmethod
+    
     def has_user_voted(user_id):
         conn = database.connect_db()
         cursor = conn.cursor()
@@ -52,25 +64,27 @@ class Cryptography:
         return result and result[0] == 1
 
     # Fonction de déchiffrement du vote
-    @staticmethod
     def decrypt_vote(encrypted_vote, encrypted_aes_key, hmac_digest, hmac_key, public_key):
+        """Decrypts a vote using RSA and AES, and verifies integrity with HMAC."""
         hmac = HMAC.new(hmac_key, encrypted_vote.encode() + base64.b64decode(encrypted_aes_key), SHA256)
         calculated_hmac = hmac.hexdigest()
 
         if calculated_hmac != hmac_digest:
-            raise ValueError("L'HMAC ne correspond pas. Les données ont été modifiées.")
+            raise ValueError("HMAC does not match. Data has been tampered with.")
 
         username = Cryptography.get_username_from_public_key(public_key)
-        private_key_path = f"private_keys/{username}_private_key.pem"
-        
-        with open(private_key_path, "rb") as f:
-            private_key = RSA.import_key(f.read())
+        conn = database.connect_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT rsa_private_key FROM users WHERE username = ?", (username,))
+        private_key = cursor.fetchone()[0]
+        conn.close()
 
+        private_key = RSA.import_key(private_key)
         cipher_rsa = PKCS1_OAEP.new(private_key)
         try:
             aes_key = cipher_rsa.decrypt(base64.b64decode(encrypted_aes_key))
         except ValueError:
-            raise ValueError("La clé RSA privée ne correspond pas à la clé utilisée pour chiffrer le vote.")
+            raise ValueError("Private RSA key does not match the key used to encrypt the vote.")
 
         encrypted_vote_data = base64.b64decode(encrypted_vote)
         iv = encrypted_vote_data[:AES.block_size]
@@ -81,9 +95,18 @@ class Cryptography:
 
         return decrypted_vote
     
-    
+    def get_username_from_public_key(public_key):
+        """Returns the username from the RSA public key."""
+        conn = database.connect_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT username FROM users WHERE rsa_public_key = ?", (public_key,))
+        result = cursor.fetchone()
+        conn.close()
+        return result[0] if result else None
+        
+        
     # Fonction pour récupérer le nom d'utilisateur à partir de la clé publique
-    @staticmethod
+    
     def get_username_from_public_key(public_key):
         conn = database.connect_db()
         cursor = conn.cursor()
@@ -92,16 +115,12 @@ class Cryptography:
         conn.close()
         return result[0] if result else None
     
-    @staticmethod
+    
     def is_valid_username(username):
-        # Expression régulière qui interdit les caractères spéciaux
-        # Autorise uniquement les lettres, chiffres, tirets, et underscores
-        if re.match("^[a-zA-Z0-9_-]+$", username):
-            return True
-        else:
-            return False
+        """Checks if the username is valid (letters, numbers, hyphens, and underscores)."""
+        return bool(re.match("^[a-zA-Z0-9_-]+$", username))
 
-    @staticmethod  
+      
     # Vérification si l'utilisateur est un administrateur
     def is_admin(user_id):
         conn = database.connect_db()

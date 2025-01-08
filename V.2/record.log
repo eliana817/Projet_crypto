@@ -19,3 +19,159 @@
 2025-01-07 17:00:10,700 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 17:00:10] "GET /static/background.jpg HTTP/1.1" 200 -
 2025-01-07 17:07:01,672 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 17:07:01] "[33mGET /private_keys HTTP/1.1[0m" 404 -
 2025-01-07 17:07:36,189 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [07/Jan/2025 17:07:36] "[33mGET /private_keys HTTP/1.1[0m" 404 -
+2025-01-08 10:07:41,605 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 10:07:41,605 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 10:07:41,621 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 10:07:42,181 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 10:07:42,181 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 10:08:02,340 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:08:02,371 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:02] "GET / HTTP/1.1" 200 -
+2025-01-08 10:08:02,583 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:02] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-08 10:08:02,660 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-08 10:08:02,666 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:02] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-08 10:08:06,503 INFO root Thread-6 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:08:06,532 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:06] "GET /login HTTP/1.1" 200 -
+2025-01-08 10:08:06,627 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:06] "GET /static/login.css HTTP/1.1" 200 -
+2025-01-08 10:08:06,758 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:06] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:08:12,298 INFO root Thread-9 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:08:12,335 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:12] "POST /login HTTP/1.1" 200 -
+2025-01-08 10:08:12,400 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:12] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 10:08:12,487 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:12] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:08:21,321 INFO root Thread-12 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:08:21,321 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:21] "POST /login HTTP/1.1" 200 -
+2025-01-08 10:08:21,383 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:21] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 10:08:21,512 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:21] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:08:26,828 INFO root Thread-15 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:08:26,863 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:26] "GET /register HTTP/1.1" 200 -
+2025-01-08 10:08:26,928 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:26] "GET /static/register.css HTTP/1.1" 200 -
+2025-01-08 10:08:27,066 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:08:27] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:10:57,411 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\elian\\Guardia\\GU3\\4_crypto\\Project\\Projet_crypto\\V.2\\application\\routes.py', reloading
+2025-01-08 10:10:57,537 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 10:10:58,104 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 10:10:58,104 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 10:11:09,347 INFO root Thread-2 (process_request_thread) : User accessed /register from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:11:09,356 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:09] "GET /register HTTP/1.1" 200 -
+2025-01-08 10:11:09,510 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:09] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+2025-01-08 10:11:09,543 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:09] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:11:12,747 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:11:12,763 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:12] "GET /login HTTP/1.1" 200 -
+2025-01-08 10:11:12,825 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:12] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 10:11:12,975 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:12] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:11:17,637 INFO root Thread-8 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:11:17,701 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:17] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-01-08 10:11:17,819 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:17] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-08 10:11:17,854 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:17] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-08 10:11:17,957 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:17] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=IkDrhtnHQj8FNXilBp8w HTTP/1.1" 200 -
+2025-01-08 10:11:17,958 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:17] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-08 10:11:49,183 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\elian\\Guardia\\GU3\\4_crypto\\Project\\Projet_crypto\\V.2\\application\\routes.py', reloading
+2025-01-08 10:11:49,319 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 10:11:49,922 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 10:11:49,925 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 10:11:59,685 INFO root Thread-2 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:11:59,698 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:59] "GET /login HTTP/1.1" 200 -
+2025-01-08 10:11:59,874 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:59] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 10:11:59,908 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:11:59] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:12:02,819 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:03,094 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 10:12:03,123 INFO root Thread-6 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:03,204 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:03] "GET /vote HTTP/1.1" 200 -
+2025-01-08 10:12:03,305 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:03] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 10:12:03,422 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:03] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:12:08,604 INFO root Thread-9 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:08,610 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:08] "POST /vote HTTP/1.1" 200 -
+2025-01-08 10:12:08,674 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:08] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 10:12:08,871 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:08] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:12:17,756 INFO root Thread-12 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:17,839 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:17] "[35m[1mGET /results HTTP/1.1[0m" 500 -
+2025-01-08 10:12:17,894 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:17] "GET /results?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-08 10:12:17,897 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:17] "GET /results?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-08 10:12:18,036 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:18] "GET /results?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-08 10:12:18,046 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:18] "GET /results?__debugger__=yes&cmd=resource&f=console.png&s=cAjAhiIGQDOggfQppYzB HTTP/1.1" 200 -
+2025-01-08 10:12:18,048 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:18] "[36mGET /results?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-08 10:12:30,588 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\elian\\Guardia\\GU3\\4_crypto\\Project\\Projet_crypto\\V.2\\application\\routes.py', reloading
+2025-01-08 10:12:30,803 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 10:12:31,371 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 10:12:31,371 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 10:12:37,003 INFO root Thread-2 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:37,003 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:37] "[31m[1mGET /results HTTP/1.1[0m" 403 -
+2025-01-08 10:12:41,330 INFO root Thread-3 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:41,330 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:41] "[31m[1mGET /vote HTTP/1.1[0m" 403 -
+2025-01-08 10:12:45,493 INFO root Thread-4 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:45,811 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 10:12:45,830 INFO root Thread-5 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:45,851 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:45] "GET /vote HTTP/1.1" 200 -
+2025-01-08 10:12:46,052 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:46] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 10:12:46,068 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:46] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:12:49,006 INFO root Thread-8 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:49,052 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:49] "GET /results HTTP/1.1" 200 -
+2025-01-08 10:12:49,120 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:49] "GET /static/resultats.css HTTP/1.1" 200 -
+2025-01-08 10:12:49,241 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:49] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-08 10:12:53,375 INFO root Thread-11 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:12:53,379 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:53] "GET /vote HTTP/1.1" 200 -
+2025-01-08 10:12:53,449 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:53] "GET /static/vote.css HTTP/1.1" 200 -
+2025-01-08 10:12:53,604 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:53] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-08 10:12:54,613 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:12:54] "[31m[1mGET /logout HTTP/1.1[0m" 405 -
+2025-01-08 10:13:25,996 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\elian\\Guardia\\GU3\\4_crypto\\Project\\Projet_crypto\\V.2\\application\\routes.py', reloading
+2025-01-08 10:13:26,106 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 10:13:26,617 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 10:13:26,621 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 10:13:59,046 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 10:13:59,046 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 10:13:59,050 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 10:13:59,639 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 10:13:59,641 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 10:14:10,353 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:14:10,358 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:14:10] "GET / HTTP/1.1" 200 -
+2025-01-08 10:14:10,524 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:14:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-08 10:14:10,567 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:14:10] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:14:13,504 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:14:13,507 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:14:13] "GET /login HTTP/1.1" 200 -
+2025-01-08 10:14:13,561 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:14:13] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 10:14:13,716 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:14:13] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:14:21,305 INFO root Thread-8 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:14:21,305 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:14:21] "POST /login HTTP/1.1" 200 -
+2025-01-08 10:14:21,416 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:14:21] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 10:14:21,546 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:14:21] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:15:42,458 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\elian\\Guardia\\GU3\\4_crypto\\Project\\Projet_crypto\\V.2\\application\\routes.py', reloading
+2025-01-08 10:15:42,576 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 10:15:43,142 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 10:15:43,149 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 10:16:00,632 INFO root Thread-2 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:16:00,637 INFO root Thread-2 (process_request_thread) : User submitted data: None
+2025-01-08 10:16:00,648 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:16:00] "POST /login HTTP/1.1" 200 -
+2025-01-08 10:16:00,842 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:16:00] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 10:16:00,868 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:16:00] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:18:50,319 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-08 10:18:50,319 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-08 10:18:50,322 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 10:18:50,934 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 10:18:50,939 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 10:19:02,652 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:19:02,658 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:02] "GET / HTTP/1.1" 200 -
+2025-01-08 10:19:02,843 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-08 10:19:02,871 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:02] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:19:04,852 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:19:04,858 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:04] "GET /login HTTP/1.1" 200 -
+2025-01-08 10:19:04,909 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:04] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-08 10:19:05,071 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:05] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:19:10,449 INFO root Thread-8 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:19:10,464 INFO root Thread-8 (process_request_thread) : User submitted data: (1, '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892', b'-----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEAoxUNI7zPqUixPbYt141DkJEM86LIkd3bRHHxvDxtCz1BQmCr\nrCGACke6y32oMIz9BHBN6CA05qdCsKF0RWFuNNV6Z+9xCWLOjL0RUSbpYPLmoMlp\nAA8z9AZxxnN6WgMbmu7a/1TD3GBqaETtugM+9Ve16BgQNUhiveeYSpG6jTNiZpQx\nNJJJRJJ9jPypqYndQ1sjrS3prTHxSZlyCd8ZrbOYJE0pGX6IFNgmmcX/4KJTNjxU\nolFPdupneXUYXNFMi6jJ0NoRgg+Ej8B/brhLJkvb2nKn91s9UDLjiWRTwbODwk3C\nOX55NF6GMcQqCMW8ewOsChkttolyRTHJVk9/BQIDAQABAoIBABGWUUQbtkVqVSWe\nQlQETwIF3TYKcG49VR/iLeX/75Pjt5L3UUGPR1Cp1aeLq0S5H7GH2aRWkiiXEdEc\nnakRzcxy1/A3g/g1ff2dh4LkmwyH2tQCLzRWGg3krVvFKQUQtWcVqpZt8hq6Zx9M\nN7BKGKhlch+lNgeZASpmZye7juPFN6wMb2ff4nj9y41+GPE1mDdvyim1ZxtMcaiK\nKl2QmVkWPtD3czJ2lsaxD2rEEBW99b3m0m5nAfSimNYtMagSTOpFGrsPqqIYJSl7\npbByXBKEorVUiYp8QFIZHVQBVFThLhAak6l0d4LU86BBSm9cQZQtxkGNKBN3hjVo\nXxNaQe0CgYEAvltIYxPqt1JgGXOzkmed5pSdDWOT6NcIMMQvH10DjZZ/7gAFD/aS\nlu+1HkBs5eGaEKW47Fhq5bjpcK5WZPvS4KsttMLGSj4XqbMb7XDjtYq0qm1EZeIE\nIo5hBSRPDH38JRfoysNMFvhN5bxVxg9EOiYTc40VuuPWjLg9uVPb+VcCgYEA21H7\n7s/lDJiKGWmBEr4tcsaNQElBTdRnjybxy0QCpS3hBfFkpY6zJoA9Q9Sm7zbARVKE\nrNXa9EPuGYzIL6gV8Qq55upGt3IJoVsfV5ZbQrCJfkPhKOWMOVn4PFxRYaZy9kDl\nE+gGCbw2ECIvhYc2+t9gGsNUBKbJ+CWLczSeJQMCgYBHRPP4LGfPlSbnwJr18Jd8\n0h1u+t5Q6dlmML2X14JSC4wANr+ud1nw6vR7zBE5jFrbasCutHfpZG76QjuUeXg9\np7loGRiWiWLgpW+KWZ7XxIPZ3ykhoBp+OaJ3g12ZRr4VwTrmV3JwkyzPG9FdYy/f\nOYxE0gjVvSIB86UgcxZD5wKBgFA0sDyKnMo5cq+ObNyM3hQOVpO+9nnfBqxMYrqi\nOZFssNE6kUMWZ5/Z4A3RU+dBj5kKb2jBoJwZx5ZibMc44iVPdeLjpE7sDmeK6nBe\nlStTYkTh0BLjt581rtlsLXrXo005OE1KWgLvaJoH1ncvlsSyMfQ3oJ8+27e7Cz9r\na7Y/AoGALqqDdEYcy3ab25JSvFDzbMiwUakjG8PK0vPlR/devj9lNAXuGiBuk2/1\nXzgQJigzZehaMTIc3pnSxO8AVZfaR18VYQH4AnnHCwB8PEg7WiNSSnpAVJbY87Oy\ndtQ7JvoQY++gyQrDJsAHkT5wXe99hl6GzAnwGucfCt1mu/tbbkQ=\n-----END RSA PRIVATE KEY-----', b'-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoxUNI7zPqUixPbYt141D\nkJEM86LIkd3bRHHxvDxtCz1BQmCrrCGACke6y32oMIz9BHBN6CA05qdCsKF0RWFu\nNNV6Z+9xCWLOjL0RUSbpYPLmoMlpAA8z9AZxxnN6WgMbmu7a/1TD3GBqaETtugM+\n9Ve16BgQNUhiveeYSpG6jTNiZpQxNJJJRJJ9jPypqYndQ1sjrS3prTHxSZlyCd8Z\nrbOYJE0pGX6IFNgmmcX/4KJTNjxUolFPdupneXUYXNFMi6jJ0NoRgg+Ej8B/brhL\nJkvb2nKn91s9UDLjiWRTwbODwk3COX55NF6GMcQqCMW8ewOsChkttolyRTHJVk9/\nBQIDAQAB\n-----END PUBLIC KEY-----', 0, 1)
+2025-01-08 10:19:10,464 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-08 10:19:10,495 INFO root Thread-9 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:19:10,507 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:10] "GET /vote HTTP/1.1" 200 -
+2025-01-08 10:19:10,568 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:10] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 10:19:10,687 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:10] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:19:16,839 INFO root Thread-12 (process_request_thread) : User accessed /vote from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:19:16,843 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:16] "POST /vote HTTP/1.1" 200 -
+2025-01-08 10:19:16,895 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:16] "[36mGET /static/vote.css HTTP/1.1[0m" 304 -
+2025-01-08 10:19:17,065 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:17] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-08 10:19:33,834 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\elian\\Guardia\\GU3\\4_crypto\\Project\\Projet_crypto\\V.2\\application\\routes.py', reloading
+2025-01-08 10:19:33,963 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-08 10:19:34,537 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-08 10:19:34,537 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-08 10:19:45,374 INFO root Thread-2 (process_request_thread) : User accessed /results from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-08 10:19:45,374 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:45] "[31m[1mGET /results HTTP/1.1[0m" 403 -
+2025-01-08 10:19:49,658 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 10:19:49] "[31m[1mGET /logout HTTP/1.1[0m" 405 -
