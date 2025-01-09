@@ -3,3 +3,4 @@ app/__pycache__
 users.db
 record.log
 key.pem
+__init__.py
