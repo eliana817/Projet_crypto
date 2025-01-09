@@ -10,7 +10,7 @@ class Cryptography:
     # Generate RSA key pair (public and private)
     def generate_rsa_keys():
         """Generates a RSA key pair (public and private)."""
-        (public_key, private_key) = rsa.newkeys(64)  # Generate RSA keys with 64 bits
+        (public_key, private_key) = rsa.newkeys(256)  # Generate RSA keys with 64 bits
         private_key_pem = private_key.save_pkcs1()  # Save the private key in PEM format
         public_key_pem = public_key.save_pkcs1()  # Save the public key in PEM format
         return public_key_pem, private_key_pem
