@@ -10,8 +10,18 @@
     <header>
         <h1>Bienvenue sur notre plateforme de vote</h1>
         <div class="header-buttons">
-            <a href="/login" class="btn">Se connecter</a>
-            <a href="/register" class="btn">S'inscrire</a>
+            {% if is_logged_in %}
+                <!-- Si connecté, afficher le message et une déconnexion -->
+                <span>Bonjour, {{ username }} !</span>
+        
+                <!-- Formulaire pour la déconnexion -->
+                <form action="/logout" method="POST" style="display:inline;">
+                    <button type="submit" class="btn">Se déconnecter</button>
+                </form>
+            {% else %}
+                <a href="/login" class="btn">Se connecter</a>
+                <a href="/register" class="btn">S'inscrire</a>
+            {% endif %}
         </div>
     </header>
 
@@ -20,13 +30,13 @@
             <!-- Card 1: Histoire du pain au chocolat -->
             <div class="card">
                 <h3>Le Pain au Chocolat</h3>
-                <p>Le pain au chocolat, est un croissant rectangulaire garni de barres de chocolat. Sa naissance remonte au début du XIXe siècle en France. Bien que son origine exacte soit débattue, il est souvent attribué à un pâtissier viennois qui, après avoir introduit la pâte feuilletée en France, l'aurait garnie de chocolat.</p>
+                <p>Le pain au chocolat, est une viennoiserie constituée d'une pâte levée feuilletée, identique à celle du croissant, rectangulaire et enroulée sur une ou plusieurs barres de chocolat.</p>
             </div>
 
             <!-- Card 2: Histoire de la Chocolatine -->
             <div class="card">
                 <h3>La Chocolatine</h3>
-                <p>Qui?</p>
+                <p>Chocola quoi ???</p>
             </div>
         </div>
     </main>

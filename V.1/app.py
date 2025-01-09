@@ -1,7 +1,7 @@
 from application import create_app
 from python_files import database
 
-app = create_app()
+app = create_app()  
 
 if __name__ == '__main__':
     database.create_user_table()  # Crée la table des utilisateurs à chaque démarrage de l'application

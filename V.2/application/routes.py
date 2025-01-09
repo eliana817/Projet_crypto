@@ -1,7 +1,6 @@
-from flask import Blueprint, render_template, request, redirect, flash, session, abort, make_response
+from flask import Blueprint, render_template, request, flash, session, abort, Markup, redirect, make_response
 from python_files import database
 from python_files import algorithme_de_chiffrement
-from flask import flash, redirect, render_template, request
 import logging
 import html
 
@@ -36,7 +35,7 @@ def set_admin_password():
 
     # Vérifier si l'admin a déjà changé son mot de passe
     if 'admin_password_reset' in session and session['admin_password_reset'] == True:
-        flash('Vous avez déjà réinitialisé votre mot de passe. Vous pouvez vous connecter maintenant.', 'info')
+        flash(Markup.escape('Vous avez déjà réinitialisé votre mot de passe. Vous pouvez vous connecter maintenant.'), 'info')
         return redirect('/vote')  # Redirige vers la page de connexion
 
     if request.method == 'POST':
@@ -47,12 +46,12 @@ def set_admin_password():
 
         # Vérifier que les mots de passe correspondent
         if password != confirm_password:
-            flash('Les mots de passe ne correspondent pas.', 'error')
+            flash(Markup.escape('Les mots de passe ne correspondent pas.'), 'error')
             return redirect('/set-admin-password')
 
         # Vérifier la force du mot de passe (au moins 13 caractères, majuscule, minuscule, chiffres, caractères spéciaux)
         if not algorithme_de_chiffrement.Cryptography.validate_password(password):
-            flash("Le mot de passe doit contenir au moins 13 caractères, incluant des majuscules, des minuscules, des chiffres et des caractères spéciaux.", "error")
+            flash(Markup.escape("Le mot de passe doit contenir au moins 13 caractères, incluant des majuscules, des minuscules, des chiffres et des caractères spéciaux."), "error")
             return redirect('/set-admin-password')
 
         username = "admin"
@@ -70,7 +69,7 @@ def set_admin_password():
         session['admin_password_reset'] = True
 
         # Informer l'utilisateur que le mot de passe a été changé
-        flash('Mot de passe mis à jour avec succès !', 'success')
+        flash(Markup.escape('Mot de passe mis à jour avec succès !'), 'success')
 
         return redirect('/login')  # Redirige vers la page de connexion
 
@@ -89,7 +88,7 @@ def login():
 
         # Vérifier si le nom d'utilisateur est valide
         if not algorithme_de_chiffrement.Cryptography.is_valid_username(username):
-            flash("Le pseudo ne peut contenir que des lettres, des chiffres, des tirets et des underscores.", "error")
+            flash(Markup.escape("Le pseudo ne peut contenir que des lettres, des chiffres, des tirets et des underscores."), "error")
             return redirect('/login')
 
         hashed_username = database.hash_username(username)  # Hashage sécurisé du pseudo
@@ -105,14 +104,14 @@ def login():
 
             # Vérification si c'est la première connexion de l'admin
             if user[6] == 1 and user[5] == 0:  # Le champ 'has_voted' ou un autre champ que vous utilisez pour identifier la première connexion
-                flash('Veuillez définir un nouveau mot de passe pour l\'administrateur.', 'warning')
+                flash(Markup.escape('Veuillez définir un nouveau mot de passe pour l\'administrateur.'), 'warning')
                 return redirect('/set-admin-password')  # Redirige vers la page de définition du mot de passe
 
-            flash('Connexion réussie !', 'success')
+            flash(Markup.escape('Connexion réussie !'), 'success')
             return redirect('/vote')  # Redirige vers la page de vote
 
         else:
-            flash('Pseudo ou mot de passe incorrect.', 'error')
+            flash(Markup.escape('Pseudo ou mot de passe incorrect.'), 'error')
     
     return render_template('login.html')
 
@@ -125,7 +124,7 @@ def logout():
     response.set_cookie('session', '', max_age=0)
     response.delete_cookie('session')
 
-    flash('Logout successful', 'success')
+    flash(Markup.escape('Logout successful'), 'success')
     return response
 
 @bp.route('/register', methods=['GET', 'POST'])
@@ -140,12 +139,12 @@ def register():
         
         # Vérifier si le nom d'utilisateur est valide
         if not algorithme_de_chiffrement.Cryptography.is_valid_username(username):
-            flash("Le pseudo ne peut contenir que des lettres, des chiffres, des tirets et des underscores.", "error")
+            flash(Markup.escape("Le pseudo ne peut contenir que des lettres, des chiffres, des tirets et des underscores."), "error")
             return redirect('/register')
 
         # Validation du mot de passe
         if not algorithme_de_chiffrement.Cryptography.validate_password(password):
-            flash("Le mot de passe doit contenir au moins 13 caractères, incluant des majuscules, des minuscules, des chiffres et des caractères spéciaux.", "error")
+            flash(Markup.escape("Le mot de passe doit contenir au moins 13 caractères, incluant des majuscules, des minuscules, des chiffres et des caractères spéciaux."), "error")
             return redirect('/register')
 
         hashed_username = database.hash_username(username)  # Hashage sécurisé du pseudo
@@ -155,7 +154,7 @@ def register():
         existing_user = cursor.fetchone()
 
         if existing_user:
-            flash('Ce pseudo est déjà pris.', 'error')
+            flash(Markup.escape('Ce pseudo est déjà pris.'), 'error')
             return redirect('/register')
 
         # Hacher le mot de passe
@@ -169,7 +168,7 @@ def register():
         conn.commit()
         conn.close()
 
-        flash('Utilisateur inscrit avec succès. Vous pouvez maintenant vous connecter.', 'success')
+        flash(Markup.escape('Utilisateur inscrit avec succès. Vous pouvez maintenant vous connecter.'), 'success')
         return redirect('/login')
 
     return render_template('register.html')
@@ -218,7 +217,7 @@ def vote():
 
     # Vérifier si l'utilisateur est un administrateur
     if algorithme_de_chiffrement.Cryptography.is_admin(user_id):
-        flash('L\'administrateur ne peut pas voter.', 'info')
+        flash(Markup.escape('L\'administrateur ne peut pas voter.'), 'info')
         return render_template('vote.html', has_voted=False, is_admin=True)  # Ne permet pas de voter à l'admin
 
     # Vérifier si l'utilisateur a déjà voté
@@ -252,7 +251,7 @@ def vote():
         conn.commit()
         conn.close()
 
-        flash(f'Vous avez voté pour: {vote}', 'success')
+        flash(Markup.escape(f'Vous avez voté pour: {vote}'), 'success')
         return redirect('/vote')
 
     return render_template('vote.html', has_voted=False, is_admin=False)

@@ -11,9 +11,12 @@
     <header>
         <h1>Résultats des votes</h1>
         <div class="header-buttons">
-            <a href="/logout" class="btn">Se déconnecter</a>
+            <!-- Formulaire de déconnexion -->
+            <form action="/logout" method="POST" style="display:inline;">
+                <button type="submit" class="btn">Se déconnecter</button>
+            </form>
             <a href="/vote" class="btn">Retour au vote</a>
-        </div>
+        </div> 
     </header>
 
     <!-- Contenu principal -->
@@ -25,7 +28,7 @@
             <div class="results">
                 <div class="result-item">
                     <h3>Pain au Chocolat</h3>
-                    <p>{{ vote_count['Pain au Chocolat'] }} votes</p>
+                    <p>{{ vote_count['Pain au chocolat'] }} votes</p>
                 </div>
                 <div class="result-item">
                     <h3>Chocolatine</h3>

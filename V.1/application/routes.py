@@ -1,18 +1,19 @@
-from flask import Blueprint, render_template, request, redirect, flash, session
+from flask import Blueprint, render_template, request, redirect, flash, session, abort, make_response
 from python_files import database
 from python_files import algorithme_de_chiffrement
-import os
+from flask import flash, redirect, render_template, request
 import hashlib
+import os
 
 bp = Blueprint('routes', __name__)
 
 ####################### Paths ###################
 
 @bp.route('/')
-
 def homepage():
+	"""Home page"""
 	return render_template('homepage.html')
-
+	
 
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
@@ -22,11 +23,10 @@ def login():
 		
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		query = f"SELECT * FROM users WHERE username = '{username}' AND password = '{hashlib.sha1(password.encode()).hexdigest()}'" 
-		cursor.execute(query)
+		cursor.execute(f"SELECT * FROM users WHERE username = '{username}' AND password = '{hashlib.sha1(password.encode()).hexdigest()}'")
 		user = cursor.fetchone()
 		conn.close()
-		
+
 		if user:
 			session['user_id'] = user[0]  # Enregistrement de l'ID de l'utilisateur dans la session
 			flash('Connexion réussie !', 'success')
@@ -39,6 +39,7 @@ def login():
 
 @bp.route('/logout', methods=['GET', 'POST'])
 def logout():
+	"""Logout the user."""
 	if request.method == 'POST':
 		session.clear()  # Efface toutes les données de session (déconnexion)
 		flash('Déconnexion réussie', 'success')
@@ -50,24 +51,24 @@ def register():
 	if request.method == 'POST':
 		username = request.form['username']
 		password = request.form['password']
-		
-		# Vérification si l'utilisateur existe déjà
+
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		query = f"SELECT * FROM users WHERE username = '{username}'"
-		cursor.execute(query)
+		cursor.execute(f"SELECT * FROM users WHERE username = '{username}'")
 		existing_user = cursor.fetchone()
 
 		if existing_user:
 			flash('Ce pseudo est déjà pris.', 'error')
-			return redirect('/register')  # Redirige vers la page d'inscription si l'utilisateur existe déjà
+			return redirect('/register')
+
+		# Hacher le mot de passe
 		hashed_password = hashlib.sha1(password.encode()).hexdigest()
 
-		# Génération de la paire de clés RSA pour cet utilisateur
+		# Générer les clés RSA
 		public_key, private_key = algorithme_de_chiffrement.Cryptography.generate_rsa_keys()
 
-		# Enregistrer le nouvel utilisateur avec la clé publique RSA et has_voted = 0
-		cursor.execute("INSERT INTO users (username, password, rsa_public_key, has_voted, is_admin) VALUES (?, ?, ?, ?, ?)", (username, hashed_password, public_key, 0, 0))
+		cursor.execute("INSERT INTO users (username, password, rsa_public_key, has_voted, is_admin) VALUES (?, ?, ?, ?, ?)", 
+					   (username, hashed_password, public_key, 0, 0))  
 		conn.commit()
 		conn.close()
 
@@ -78,16 +79,13 @@ def register():
 			f.write(private_key)
 
 		flash('Utilisateur inscrit avec succès. Vous pouvez maintenant vous connecter.', 'success')
-		return redirect('/login')  # Redirection vers la page de connexion
+		return redirect('/login')
 
 	return render_template('register.html')
 
+
 @bp.route('/results')
 def results():
-	if 'user_id' not in session:
-		flash('Vous devez être connecté pour voir les résultats!', 'error')
-		return redirect('/login')  # Redirige vers la page de login si l'utilisateur n'est pas connecté
-
 	# Récupérer tous les votes de la base de données
 	conn = database.connect_db()
 	cursor = conn.cursor()
@@ -103,10 +101,10 @@ def results():
 		decrypted_votes.append(decrypted_vote)
 
 	# Compter les votes pour chaque option
-	vote_count = {"Pain au Chocolat": 0, "Chocolatine": 0}
+	vote_count = {"Pain au chocolat": 0, "Chocolatine": 0}
 	for vote in decrypted_votes:
-		if vote == "Pain au Chocolat":
-			vote_count["Pain au Chocolat"] += 1
+		if vote == "Pain au chocolat":
+			vote_count["Pain au chocolat"] += 1
 		elif vote == "Chocolatine":
 			vote_count["Chocolatine"] += 1
 	
@@ -114,30 +112,29 @@ def results():
 
 
 
+
 @bp.route('/vote', methods=['GET', 'POST'])
 def vote():
+	# Vérifier si l'utilisateur est connecté, sinon renvoyer une erreur 403
 	if 'user_id' not in session:
-		flash('Vous devez être connecté pour voter !', 'error')
-		return redirect('/login')
-	
+		abort(403)  # Retourne une erreur 403 si l'utilisateur n'est pas connecté
+
 	user_id = session['user_id']
 
+	# Vérifier si l'utilisateur est un administrateur
 	if algorithme_de_chiffrement.Cryptography.is_admin(user_id):
 		flash('L\'administrateur ne peut pas voter.', 'info')
 		return render_template('vote.html', has_voted=False, is_admin=True)  # Ne permet pas de voter à l'admin
 
 	# Vérifier si l'utilisateur a déjà voté
 	if algorithme_de_chiffrement.Cryptography.has_user_voted(user_id):
-		#flash('Vous avez déjà voté !', 'info')
-		return render_template('vote.html', has_voted=True, is_admin = False)
+		return render_template('vote.html', has_voted=True, is_admin=False)
 
 	if request.method == 'POST':
 		vote = request.form['vote']
-		
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		query = f"SELECT rsa_public_key FROM users WHERE id = '{user_id}'"
-		cursor.execute(query)
+		cursor.execute("SELECT rsa_public_key FROM users WHERE id = ?", (user_id,))
 		user = cursor.fetchone()
 		conn.close()
 
@@ -148,15 +145,15 @@ def vote():
 		# Stocker le vote chiffré et la clé publique dans la base de données
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		cursor.execute("INSERT INTO votes (vote, aes_key, user_public_key) VALUES (?, ?, ?)", (encrypted_vote, encrypted_aes_key, public_key))
+		cursor.execute("INSERT INTO votes (vote, aes_key, user_public_key) VALUES (?, ?, ?)", 
+					   (encrypted_vote, encrypted_aes_key, public_key))
 		conn.commit()
 		conn.close()
 
 		# Marquer l'utilisateur comme ayant voté
 		conn = database.connect_db()
 		cursor = conn.cursor()
-		query = f"UPDATE users SET has_voted = 1 WHERE id = '{user_id}'"
-		cursor.execute(query)
+		cursor.execute("UPDATE users SET has_voted = 1 WHERE id = ?", (user_id,))
 		conn.commit()
 		conn.close()
 
