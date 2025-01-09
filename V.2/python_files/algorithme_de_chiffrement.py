@@ -7,6 +7,7 @@ from Crypto.Util.Padding import pad, unpad
 import base64
 import re
 from python_files import database  # Pour l'accès à la base de données
+from flask import abort
 
 ############# Classe Cryptography ################
 class Cryptography:
@@ -52,6 +53,7 @@ class Cryptography:
         calculated_hmac = hmac.hexdigest()
 
         if calculated_hmac != hmac_digest:
+            abort(403)
             raise ValueError("HMAC does not match. Data has been tampered with.")
 
         # Récupérer le nom d'utilisateur en fonction de la clé publique
@@ -69,6 +71,7 @@ class Cryptography:
             # Déchiffrer la clé AES avec la clé privée
             aes_key = cipher_rsa.decrypt(base64.b64decode(encrypted_aes_key))
         except ValueError:
+            abort(403)
             raise ValueError("Private RSA key does not match the key used to encrypt the vote.")
 
         # Déchiffrement du vote avec la clé AES
