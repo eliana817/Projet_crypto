@@ -42,9 +42,9 @@ def create_admin_user():
     cursor = conn.cursor()
     cursor.execute("SELECT COUNT(*) FROM users")
     count = cursor.fetchone()[0]
-    if count == 0:  # If no users exist, create the admin
+    if count == 0: 
         username = "admin"
-        password = "admin"  # Default password for admin
+        password = "admin" 
         hashed_password = hashlib.sha1(password.encode()).hexdigest()
 
         public_key, private_key = algorithme_de_chiffrement.Cryptography.generate_rsa_keys()
