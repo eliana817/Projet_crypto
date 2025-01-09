@@ -347,3 +347,47 @@
 2025-01-08 22:45:30,338 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 22:45:30] "GET /vote HTTP/1.1" 200 -
 2025-01-08 22:45:30,390 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 22:45:30] "[36mGET /static/combined_css.css HTTP/1.1[0m" 304 -
 2025-01-08 22:45:30,496 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [08/Jan/2025 22:45:30] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-09 03:23:14,328 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-09 03:23:14,330 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-09 03:23:14,333 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-09 03:23:14,920 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-09 03:23:14,920 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-09 03:25:41,446 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-09 03:25:41,450 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:25:41] "GET / HTTP/1.1" 200 -
+2025-01-09 03:25:41,639 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:25:41] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-09 03:25:41,807 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:25:41] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-09 03:25:44,044 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-09 03:25:44,050 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:25:44] "GET /login HTTP/1.1" 200 -
+2025-01-09 03:25:44,127 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:25:44] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-09 03:25:44,268 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:25:44] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-09 03:26:37,671 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-09 03:26:37,671 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-09 03:26:37,673 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-09 03:26:38,169 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-09 03:26:38,173 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-09 03:26:45,266 INFO root Thread-2 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-09 03:26:45,272 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:26:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-09 03:26:45,292 INFO root Thread-3 (process_request_thread) : User accessed /set-admin-password from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-09 03:26:45,331 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:26:45] "GET /set-admin-password HTTP/1.1" 200 -
+2025-01-09 03:26:45,479 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:26:45] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-09 03:26:45,557 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 03:26:45] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+2025-01-09 03:41:20,652 INFO werkzeug MainThread :  * Detected change in 'C:\\Users\\elian\\Guardia\\GU3\\4_crypto\\Project\\Projet_crypto\\Projet_crypto\\V.2\\application\\routes.py', reloading
+2025-01-09 03:41:20,762 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-09 03:41:21,482 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-09 03:41:21,487 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-09 10:40:56,104 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:5002
+2025-01-09 10:40:56,104 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2025-01-09 10:40:56,106 INFO werkzeug MainThread :  * Restarting with stat
+2025-01-09 10:40:56,791 WARNING werkzeug MainThread :  * Debugger is active!
+2025-01-09 10:40:56,797 INFO werkzeug MainThread :  * Debugger PIN: 104-791-412
+2025-01-09 10:41:26,998 INFO root Thread-2 (process_request_thread) : User accessed / from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-09 10:41:27,002 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 10:41:27] "GET / HTTP/1.1" 200 -
+2025-01-09 10:41:27,219 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 10:41:27] "GET /static/combined_css.css HTTP/1.1" 200 -
+2025-01-09 10:41:27,286 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 10:41:27] "GET /static/background.jpg HTTP/1.1" 200 -
+2025-01-09 10:42:34,544 INFO root Thread-5 (process_request_thread) : User accessed /login from 127.0.0.1 using Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+2025-01-09 10:42:34,560 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 10:42:34] "GET /login HTTP/1.1" 200 -
+2025-01-09 10:42:34,624 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 10:42:34] "[36mGET /static/combined_username_password.css HTTP/1.1[0m" 304 -
+2025-01-09 10:42:34,783 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Jan/2025 10:42:34] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -

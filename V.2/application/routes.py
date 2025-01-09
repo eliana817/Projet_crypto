@@ -178,7 +178,7 @@ def register():
 def results():
     # Vérifier si l'utilisateur est connecté, sinon renvoyer une erreur 403
     if 'user_id' not in session or not algorithme_de_chiffrement.Cryptography.is_admin(session['user_id']):
-        abort(403)  # Retourne une erreur 403 si l'utilisateur n'est pas connecté
+        abort(403) 
 
     # Récupérer tous les votes de la base de données
     conn = database.connect_db()
